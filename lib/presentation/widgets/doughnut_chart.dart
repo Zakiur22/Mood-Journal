@@ -11,11 +11,13 @@ import 'package:syncfusion_flutter_charts/charts.dart';
 class MoodDoughnutChart extends StatefulWidget {
   final Map<Mood, Frequency> moodDataMap;
   final bool isDataEmpty;
+  final String? centerLabel;
 
   const MoodDoughnutChart({
     super.key,
     required this.moodDataMap,
     this.isDataEmpty = false,
+    this.centerLabel,
   });
 
   @override
@@ -32,6 +34,23 @@ class _MoodDoughnutChartState extends State<MoodDoughnutChart> {
     List<Frequency> yValues =
         widget.moodDataMap.entries.map((e) => e.value).toList();
     // print('yValues: $yValues');
+
+    Mood? dominantMood;
+    int highestFrequency = 0;
+    int totalFrequency = 0;
+    if (widget.moodDataMap.isNotEmpty) {
+      widget.moodDataMap.forEach((mood, freq) {
+        totalFrequency += freq;
+        if (freq > highestFrequency) {
+          highestFrequency = freq;
+          dominantMood = mood;
+        }
+      });
+    }
+    final double dominantPercentage = totalFrequency > 0
+        ? (highestFrequency / totalFrequency) * 100
+        : 0;
+
     final TextTheme textTheme = context.textTheme;
     final ThemeColorStyle themeColorStyle = context.themeColorStyle;
     final double deviceWidth = context.deviceWidth;
@@ -39,7 +58,7 @@ class _MoodDoughnutChartState extends State<MoodDoughnutChart> {
       annotations: <CircularChartAnnotation>[
         CircularChartAnnotation(
           widget:
-              ArrowIndicator(direction: getHighestSectorCenterAngle(yValues)),
+              ArrowIndicator(direction: getHighestSectorCenterAngle(yValues.isEmpty ? [1] : yValues)),
         ),
         CircularChartAnnotation(
           widget: CircleAvatar(
@@ -58,17 +77,17 @@ class _MoodDoughnutChartState extends State<MoodDoughnutChart> {
                   ),
                 ] else ...[
                   Text(
-                    'Mood of The Month',
+                    widget.centerLabel ?? 'Mood of The Month',
                     style: textTheme.bodySmall!
                         .copyWith(fontWeight: FontWeight.w400),
                   ),
                   Text(
-                    '45%', // Percentage based on calculation
+                    '${dominantPercentage.round()}%', // Percentage based on calculation
                     style: textTheme.headlineLarge!
                         .copyWith(fontWeight: FontWeight.w700),
                   ),
                   Text(
-                    'Productive',
+                    dominantMood?.label ?? 'No Data',
                     style: textTheme.bodyMedium!.copyWith(
                       fontWeight: FontWeight.w500,
                       color: themeColorStyle.secondaryColor,
