@@ -2,8 +2,8 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
-import 'package:star_book/config.dart';
-import 'package:star_book/platform_info.dart';
+import 'package:mood_journal/config.dart';
+import 'package:mood_journal/platform_info.dart';
 
 abstract class FirebaseService {
   Future<void> initialise();

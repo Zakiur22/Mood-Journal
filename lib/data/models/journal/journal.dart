@@ -1,6 +1,6 @@
 import 'package:isar/isar.dart';
-import 'package:star_book/data/models/mood/mood.dart';
-import 'package:star_book/data/utils/utils.dart';
+import 'package:mood_journal/data/models/mood/mood.dart';
+import 'package:mood_journal/data/utils/utils.dart';
 
 part 'journal.g.dart';
 

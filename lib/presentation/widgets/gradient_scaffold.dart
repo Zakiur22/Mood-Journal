@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:star_book/presentation/theme/styling/gradient_scaffold_style.dart';
-import 'package:star_book/presentation/theme/styling/theme_color_style.dart';
-import 'package:star_book/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/theme/styling/gradient_scaffold_style.dart';
+import 'package:mood_journal/presentation/theme/styling/theme_color_style.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
 
 class GradientScaffold extends StatelessWidget {
   final PreferredSizeWidget? appBar;

@@ -1,5 +1,5 @@
-import 'package:star_book/domain/models/mood/day.dart';
-import 'package:star_book/domain/models/mood/mood.dart';
+import 'package:mood_journal/domain/models/mood/day.dart';
+import 'package:mood_journal/domain/models/mood/mood.dart';
 
 class JournalFormModel {
   static const String titleKey = 'TITLE';

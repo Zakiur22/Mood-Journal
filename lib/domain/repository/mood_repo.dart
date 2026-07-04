@@ -1,6 +1,6 @@
-import 'package:star_book/domain/models/mood/mood.dart';
-import 'package:star_book/domain/models/mood/mood_frequency.dart';
-import 'package:star_book/domain/models/mood/mood_info.dart';
+import 'package:mood_journal/domain/models/mood/mood.dart';
+import 'package:mood_journal/domain/models/mood/mood_frequency.dart';
+import 'package:mood_journal/domain/models/mood/mood_info.dart';
 
 import 'base_repo.dart';
 

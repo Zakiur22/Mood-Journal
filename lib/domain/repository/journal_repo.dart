@@ -1,4 +1,4 @@
-import 'package:star_book/domain/models/journal/journal.dart';
+import 'package:mood_journal/domain/models/journal/journal.dart';
 
 import 'base_repo.dart';
 

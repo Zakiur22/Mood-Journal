@@ -1,6 +1,6 @@
-import 'package:star_book/data/data_source/local_data_source/journal_api.dart';
-import 'package:star_book/domain/models/journal/journal.dart';
-import 'package:star_book/domain/repository/journal_repo.dart';
+import 'package:mood_journal/data/data_source/local_data_source/journal_api.dart';
+import 'package:mood_journal/domain/models/journal/journal.dart';
+import 'package:mood_journal/domain/repository/journal_repo.dart';
 
 class JournalRepoImpl implements JournalRepo {
   final IJournalApi lsJournalApi;

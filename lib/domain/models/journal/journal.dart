@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:star_book/data/models/journal/journal.dart' as j;
-import 'package:star_book/domain/models/mood/mood.dart';
+import 'package:mood_journal/data/models/journal/journal.dart' as j;
+import 'package:mood_journal/domain/models/mood/mood.dart';
 
 part 'journal.freezed.dart';
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:star_book/domain/models/journal/journal.dart';
-import 'package:star_book/presentation/routes/routes.dart';
-import 'package:star_book/presentation/theme/styling/theme_color_style.dart';
-import 'package:star_book/presentation/utils/extension.dart';
+import 'package:mood_journal/domain/models/journal/journal.dart';
+import 'package:mood_journal/presentation/routes/routes.dart';
+import 'package:mood_journal/presentation/theme/styling/theme_color_style.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
 
 class JournalTile extends StatelessWidget {
   final Journal journal;

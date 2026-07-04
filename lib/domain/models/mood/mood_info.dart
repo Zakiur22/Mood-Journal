@@ -1,6 +1,6 @@
-import 'package:star_book/data/models/journal/journal.dart';
-import 'package:star_book/domain/models/mood/day.dart';
-import 'package:star_book/domain/models/mood/mood.dart';
+import 'package:mood_journal/data/models/journal/journal.dart';
+import 'package:mood_journal/domain/models/mood/day.dart';
+import 'package:mood_journal/domain/models/mood/mood.dart';
 
 class MoodInfo {
   late Map<Day, List<Mood>> info;

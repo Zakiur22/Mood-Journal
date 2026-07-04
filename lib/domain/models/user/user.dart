@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:star_book/data/models/user/user.dart' as u;
+import 'package:mood_journal/data/models/user/user.dart' as u;
 
 part 'user.freezed.dart';
 

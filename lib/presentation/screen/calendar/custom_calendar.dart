@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:star_book/presentation/screen/calendar/calendar_view.dart';
+import 'package:mood_journal/presentation/screen/calendar/calendar_view.dart';
 
 class CustomCalendar extends StatefulWidget {
   const CustomCalendar({super.key});

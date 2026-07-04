@@ -1,9 +1,9 @@
 import 'package:isar/isar.dart';
-import 'package:star_book/data/data_source/local_data_source/base_api.dart';
-import 'package:star_book/data/models/journal/journal.dart';
-import 'package:star_book/data/models/mood/mood.dart';
-import 'package:star_book/data/utils/datetime.dart';
-import 'package:star_book/data/utils/utils.dart';
+import 'package:mood_journal/data/data_source/local_data_source/base_api.dart';
+import 'package:mood_journal/data/models/journal/journal.dart';
+import 'package:mood_journal/data/models/mood/mood.dart';
+import 'package:mood_journal/data/utils/datetime.dart';
+import 'package:mood_journal/data/utils/utils.dart';
 
 abstract class IJournalApi extends BaseApi {
   static const String collectionName = 'journalCollection';

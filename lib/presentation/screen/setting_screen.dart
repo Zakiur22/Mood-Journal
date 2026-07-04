@@ -1,17 +1,17 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:star_book/app_settings.dart';
-import 'package:star_book/config.dart';
-import 'package:star_book/data/utils/local_database.dart';
-import 'package:star_book/presentation/injector/injector.dart';
-import 'package:star_book/presentation/routes/routes.dart';
-import 'package:star_book/presentation/service/links.dart';
-import 'package:star_book/presentation/shared/app_bar.dart';
-import 'package:star_book/presentation/shared/tile.dart';
-import 'package:star_book/presentation/utils/extension.dart';
-import 'package:star_book/presentation/utils/padding_style.dart';
-import 'package:star_book/presentation/widgets/gradient_scaffold.dart';
+import 'package:mood_journal/app_settings.dart';
+import 'package:mood_journal/config.dart';
+import 'package:mood_journal/data/utils/local_database.dart';
+import 'package:mood_journal/presentation/injector/injector.dart';
+import 'package:mood_journal/presentation/routes/routes.dart';
+import 'package:mood_journal/presentation/service/links.dart';
+import 'package:mood_journal/presentation/shared/app_bar.dart';
+import 'package:mood_journal/presentation/shared/tile.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/utils/padding_style.dart';
+import 'package:mood_journal/presentation/widgets/gradient_scaffold.dart';
 
 class SettingsScreen extends StatelessWidget
     implements Screen<SettingsScreenRoute> {

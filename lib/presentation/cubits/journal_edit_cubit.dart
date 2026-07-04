@@ -3,11 +3,11 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
-import 'package:star_book/domain/models/journal/journal.dart';
-import 'package:star_book/domain/models/mood/mood.dart';
-import 'package:star_book/domain/repository/journal_repo.dart';
-import 'package:star_book/presentation/cubits/cubit_state/cubit_state.dart';
-import 'package:star_book/presentation/shared/form_models/jounral_form_model.dart';
+import 'package:mood_journal/domain/models/journal/journal.dart';
+import 'package:mood_journal/domain/models/mood/mood.dart';
+import 'package:mood_journal/domain/repository/journal_repo.dart';
+import 'package:mood_journal/presentation/cubits/cubit_state/cubit_state.dart';
+import 'package:mood_journal/presentation/shared/form_models/jounral_form_model.dart';
 
 class JournalEditCubit extends Cubit<CubitState<Journal>> {
   final GlobalKey<FormBuilderState> formKey;

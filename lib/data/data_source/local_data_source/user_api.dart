@@ -1,9 +1,9 @@
 import 'package:isar/isar.dart';
-import 'package:star_book/app_settings.dart';
-import 'package:star_book/data/data_source/local_data_source/base_api.dart';
-import 'package:star_book/data/models/user/user.dart';
-import 'package:star_book/data/utils/utils.dart';
-import 'package:star_book/presentation/injector/injector.dart';
+import 'package:mood_journal/app_settings.dart';
+import 'package:mood_journal/data/data_source/local_data_source/base_api.dart';
+import 'package:mood_journal/data/models/user/user.dart';
+import 'package:mood_journal/data/utils/utils.dart';
+import 'package:mood_journal/presentation/injector/injector.dart';
 
 abstract class IUserApi extends BaseApi {
   static const String collectionName = 'userCollection';

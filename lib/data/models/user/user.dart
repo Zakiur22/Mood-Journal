@@ -1,5 +1,5 @@
 import 'package:isar/isar.dart';
-import 'package:star_book/data/utils/utils.dart';
+import 'package:mood_journal/data/utils/utils.dart';
 
 part 'user.g.dart';
 

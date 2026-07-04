@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:star_book/domain/models/mood/day.dart';
-import 'package:star_book/domain/models/mood/mood_info.dart';
-import 'package:star_book/domain/repository/mood_repo.dart';
-import 'package:star_book/presentation/cubits/cubit_state/cubit_state.dart';
-import 'package:star_book/presentation/cubits/home_screen_cubit.dart';
-import 'package:star_book/presentation/injector/injector.dart';
-import 'package:star_book/presentation/routes/routes.dart';
-import 'package:star_book/presentation/shared/app_bar.dart';
-import 'package:star_book/presentation/theme/styling/theme_color_style.dart';
-import 'package:star_book/presentation/utils/calendar.dart';
-import 'package:star_book/presentation/utils/extension.dart';
-import 'package:star_book/presentation/utils/month_details.dart';
-import 'package:star_book/presentation/widgets/floating_action_button.dart';
-import 'package:star_book/presentation/widgets/gradient_scaffold.dart';
+import 'package:mood_journal/domain/models/mood/day.dart';
+import 'package:mood_journal/domain/models/mood/mood_info.dart';
+import 'package:mood_journal/domain/repository/mood_repo.dart';
+import 'package:mood_journal/presentation/cubits/cubit_state/cubit_state.dart';
+import 'package:mood_journal/presentation/cubits/home_screen_cubit.dart';
+import 'package:mood_journal/presentation/injector/injector.dart';
+import 'package:mood_journal/presentation/routes/routes.dart';
+import 'package:mood_journal/presentation/shared/app_bar.dart';
+import 'package:mood_journal/presentation/theme/styling/theme_color_style.dart';
+import 'package:mood_journal/presentation/utils/calendar.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/utils/month_details.dart';
+import 'package:mood_journal/presentation/widgets/floating_action_button.dart';
+import 'package:mood_journal/presentation/widgets/gradient_scaffold.dart';
 
 class MonthScreen extends StatelessWidget {
   final MonthDetails monthDetails;

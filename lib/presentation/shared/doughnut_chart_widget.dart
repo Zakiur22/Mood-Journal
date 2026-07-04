@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:star_book/domain/repository/mood_repo.dart';
-import 'package:star_book/presentation/injector/injector.dart';
-import 'package:star_book/presentation/theme/styling/doughnut_chart_style.dart';
-import 'package:star_book/presentation/theme/styling/theme_color_style.dart';
-import 'package:star_book/presentation/utils/extension.dart';
-import 'package:star_book/presentation/utils/padding_style.dart';
+import 'package:mood_journal/domain/repository/mood_repo.dart';
+import 'package:mood_journal/presentation/injector/injector.dart';
+import 'package:mood_journal/presentation/theme/styling/doughnut_chart_style.dart';
+import 'package:mood_journal/presentation/theme/styling/theme_color_style.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/utils/padding_style.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class DoughnutChartWidget extends StatefulWidget {

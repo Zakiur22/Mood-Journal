@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:star_book/presentation/theme/styling/filled_button_style.dart';
-import 'package:star_book/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/theme/styling/filled_button_style.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
 
 class PrimaryFilledButton extends StatelessWidget {
   final VoidCallback onTap;

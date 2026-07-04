@@ -4,10 +4,10 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:star_book/config.dart';
-import 'package:star_book/firebase.dart';
-import 'package:star_book/presentation/service/version.dart';
-import 'package:star_book/presentation/shared/force_update_dialog.dart';
+import 'package:mood_journal/config.dart';
+import 'package:mood_journal/firebase.dart';
+import 'package:mood_journal/presentation/service/version.dart';
+import 'package:mood_journal/presentation/shared/force_update_dialog.dart';
 
 class ForceAppUpdate {
   static String version = 'enforcedVersion';

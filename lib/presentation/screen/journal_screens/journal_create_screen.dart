@@ -2,22 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:go_router/go_router.dart';
-import 'package:star_book/domain/models/journal/journal.dart';
-import 'package:star_book/domain/repository/journal_repo.dart';
-import 'package:star_book/presentation/cubits/cubit_state/cubit_state.dart';
-import 'package:star_book/presentation/cubits/journal_create_cubit.dart';
-import 'package:star_book/presentation/injector/injector.dart';
-import 'package:star_book/presentation/routes/routes.dart';
-import 'package:star_book/presentation/screen/date_picker_screen.dart';
-import 'package:star_book/presentation/screen/mood_picker_screen.dart';
-import 'package:star_book/presentation/shared/app_bar.dart';
-import 'package:star_book/presentation/shared/form_models/jounral_form_model.dart';
-import 'package:star_book/presentation/shared/form_validator.dart';
-import 'package:star_book/presentation/shared/text_field.dart';
-import 'package:star_book/presentation/theme/styling/theme_color_style.dart';
-import 'package:star_book/presentation/utils/extension.dart';
-import 'package:star_book/presentation/utils/padding_style.dart';
-import 'package:star_book/presentation/widgets/floating_action_button.dart';
+import 'package:mood_journal/domain/models/journal/journal.dart';
+import 'package:mood_journal/domain/repository/journal_repo.dart';
+import 'package:mood_journal/presentation/cubits/cubit_state/cubit_state.dart';
+import 'package:mood_journal/presentation/cubits/journal_create_cubit.dart';
+import 'package:mood_journal/presentation/injector/injector.dart';
+import 'package:mood_journal/presentation/routes/routes.dart';
+import 'package:mood_journal/presentation/screen/date_picker_screen.dart';
+import 'package:mood_journal/presentation/screen/mood_picker_screen.dart';
+import 'package:mood_journal/presentation/shared/app_bar.dart';
+import 'package:mood_journal/presentation/shared/form_models/jounral_form_model.dart';
+import 'package:mood_journal/presentation/shared/form_validator.dart';
+import 'package:mood_journal/presentation/shared/text_field.dart';
+import 'package:mood_journal/presentation/theme/styling/theme_color_style.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/utils/padding_style.dart';
+import 'package:mood_journal/presentation/widgets/floating_action_button.dart';
 
 class JournalCreateScreen extends StatefulWidget
     implements Screen<JournalCreateScreenRoute> {

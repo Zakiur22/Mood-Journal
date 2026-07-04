@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:star_book/domain/models/mood/mood.dart';
-import 'package:star_book/domain/repository/mood_repo.dart';
-import 'package:star_book/domain/repository/journal_repo.dart';
-import 'package:star_book/presentation/cubits/analytiics_screen_cubit.dart';
-import 'package:star_book/presentation/cubits/cubit_state/cubit_state.dart';
-import 'package:star_book/presentation/injector/injector.dart';
-import 'package:star_book/presentation/shared/legends_chart.dart';
-import 'package:star_book/presentation/shared/loader.dart';
-import 'package:star_book/presentation/theme/styling/theme_color_style.dart';
-import 'package:star_book/presentation/utils/extension.dart';
-import 'package:star_book/presentation/utils/padding_style.dart';
-import 'package:star_book/presentation/widgets/doughnut_chart.dart';
+import 'package:mood_journal/domain/models/mood/mood.dart';
+import 'package:mood_journal/domain/repository/mood_repo.dart';
+import 'package:mood_journal/domain/repository/journal_repo.dart';
+import 'package:mood_journal/presentation/cubits/analytiics_screen_cubit.dart';
+import 'package:mood_journal/presentation/cubits/cubit_state/cubit_state.dart';
+import 'package:mood_journal/presentation/injector/injector.dart';
+import 'package:mood_journal/presentation/shared/legends_chart.dart';
+import 'package:mood_journal/presentation/shared/loader.dart';
+import 'package:mood_journal/presentation/theme/styling/theme_color_style.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/utils/padding_style.dart';
+import 'package:mood_journal/presentation/widgets/doughnut_chart.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class MoodTrendData {

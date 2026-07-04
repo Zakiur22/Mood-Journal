@@ -1,10 +1,10 @@
 import 'package:flutter/widgets.dart';
-import 'package:star_book/data/data_source/local_data_source/journal_api.dart';
-import 'package:star_book/data/data_source/local_data_source/mood_api.dart';
-import 'package:star_book/domain/models/mood/mood.dart';
-import 'package:star_book/domain/models/mood/mood_frequency.dart';
-import 'package:star_book/domain/models/mood/mood_info.dart';
-import 'package:star_book/domain/repository/mood_repo.dart';
+import 'package:mood_journal/data/data_source/local_data_source/journal_api.dart';
+import 'package:mood_journal/data/data_source/local_data_source/mood_api.dart';
+import 'package:mood_journal/domain/models/mood/mood.dart';
+import 'package:mood_journal/domain/models/mood/mood_frequency.dart';
+import 'package:mood_journal/domain/models/mood/mood_info.dart';
+import 'package:mood_journal/domain/repository/mood_repo.dart';
 
 class MoodRepoImpl implements MoodRepo {
   final IMoodApi lSMoodApi;

@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:star_book/domain/models/mood/day.dart';
-import 'package:star_book/domain/repository/journal_repo.dart';
-import 'package:star_book/presentation/cubits/cubit_state/cubit_state.dart';
-import 'package:star_book/presentation/cubits/journal_list_cubit.dart';
-import 'package:star_book/presentation/cubits/journal_state.dart';
-import 'package:star_book/presentation/injector/injector.dart';
-import 'package:star_book/presentation/routes/routes.dart';
-import 'package:star_book/presentation/shared/app_bar.dart';
-import 'package:star_book/presentation/shared/journal_tile.dart';
-import 'package:star_book/presentation/shared/loader.dart';
-import 'package:star_book/presentation/utils/extension.dart';
-import 'package:star_book/presentation/utils/padding_style.dart';
-import 'package:star_book/presentation/widgets/floating_action_button.dart';
+import 'package:mood_journal/domain/models/mood/day.dart';
+import 'package:mood_journal/domain/repository/journal_repo.dart';
+import 'package:mood_journal/presentation/cubits/cubit_state/cubit_state.dart';
+import 'package:mood_journal/presentation/cubits/journal_list_cubit.dart';
+import 'package:mood_journal/presentation/cubits/journal_state.dart';
+import 'package:mood_journal/presentation/injector/injector.dart';
+import 'package:mood_journal/presentation/routes/routes.dart';
+import 'package:mood_journal/presentation/shared/app_bar.dart';
+import 'package:mood_journal/presentation/shared/journal_tile.dart';
+import 'package:mood_journal/presentation/shared/loader.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/utils/padding_style.dart';
+import 'package:mood_journal/presentation/widgets/floating_action_button.dart';
 
 class JournalsListScreen extends StatelessWidget
     implements Screen<JournalsListScreenRoute> {

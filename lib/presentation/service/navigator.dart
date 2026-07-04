@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:star_book/firebase.dart';
-import 'package:star_book/presentation/service/logger.dart';
+import 'package:mood_journal/firebase.dart';
+import 'package:mood_journal/presentation/service/logger.dart';
 
 class LoggerNavigatorObserver extends NavigatorObserver {
   /// The [Navigator] pushed `route`.

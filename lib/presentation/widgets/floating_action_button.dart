@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:star_book/presentation/theme/styling/floating_action_button_style.dart';
-import 'package:star_book/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/theme/styling/floating_action_button_style.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
 
 class PrimaryFloatingActionButton extends StatelessWidget {
   final VoidCallback onTap;

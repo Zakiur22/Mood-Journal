@@ -1,14 +1,14 @@
 import 'package:go_router/go_router.dart';
-import 'package:star_book/presentation/routes/routes.dart';
-import 'package:star_book/presentation/shared/app_bar.dart';
-import 'package:star_book/presentation/shared/loader.dart';
+import 'package:mood_journal/presentation/routes/routes.dart';
+import 'package:mood_journal/presentation/shared/app_bar.dart';
+import 'package:mood_journal/presentation/shared/loader.dart';
 import 'package:flutter/foundation.dart';
 import 'dart:developer' show Timeline, Flow;
 import 'package:flutter/material.dart' hide Flow;
 import 'package:flutter/scheduler.dart';
-import 'package:star_book/presentation/theme/styling/theme_color_style.dart';
-import 'package:star_book/presentation/utils/extension.dart';
-import 'package:star_book/presentation/utils/padding_style.dart';
+import 'package:mood_journal/presentation/theme/styling/theme_color_style.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/utils/padding_style.dart';
 
 part 'license_data.dart';
 

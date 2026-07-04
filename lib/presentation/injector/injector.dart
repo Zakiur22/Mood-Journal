@@ -3,20 +3,20 @@
 import 'package:isar/isar.dart';
 import 'package:kiwi/kiwi.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:star_book/app_settings.dart';
-import 'package:star_book/data/data_source/local_data_source/journal_api.dart';
-import 'package:star_book/data/data_source/local_data_source/mood_api.dart';
-import 'package:star_book/data/data_source/local_data_source/user_api.dart';
-import 'package:star_book/data/models/journal/journal.dart';
-import 'package:star_book/data/models/mood/mood.dart';
-import 'package:star_book/data/models/user/user.dart';
-import 'package:star_book/data/repository/journal_repo.dart';
-import 'package:star_book/data/repository/mood_repo.dart';
-import 'package:star_book/data/repository/user_repo.dart';
-import 'package:star_book/domain/repository/journal_repo.dart';
-import 'package:star_book/domain/repository/mood_repo.dart';
-import 'package:star_book/domain/repository/user_repo.dart';
-import 'package:star_book/firebase.dart';
+import 'package:mood_journal/app_settings.dart';
+import 'package:mood_journal/data/data_source/local_data_source/journal_api.dart';
+import 'package:mood_journal/data/data_source/local_data_source/mood_api.dart';
+import 'package:mood_journal/data/data_source/local_data_source/user_api.dart';
+import 'package:mood_journal/data/models/journal/journal.dart';
+import 'package:mood_journal/data/models/mood/mood.dart';
+import 'package:mood_journal/data/models/user/user.dart';
+import 'package:mood_journal/data/repository/journal_repo.dart';
+import 'package:mood_journal/data/repository/mood_repo.dart';
+import 'package:mood_journal/data/repository/user_repo.dart';
+import 'package:mood_journal/domain/repository/journal_repo.dart';
+import 'package:mood_journal/domain/repository/mood_repo.dart';
+import 'package:mood_journal/domain/repository/user_repo.dart';
+import 'package:mood_journal/firebase.dart';
 
 abstract class Injector {
   // maybe pass config

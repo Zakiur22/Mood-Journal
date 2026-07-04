@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:star_book/presentation/routes/routes.dart';
-import 'package:star_book/presentation/screen/calendar/month_days.dart';
-import 'package:star_book/presentation/service/remote_config.dart';
-import 'package:star_book/presentation/utils/month_details.dart';
+import 'package:mood_journal/presentation/routes/routes.dart';
+import 'package:mood_journal/presentation/screen/calendar/month_days.dart';
+import 'package:mood_journal/presentation/service/remote_config.dart';
+import 'package:mood_journal/presentation/utils/month_details.dart';
 
 class HomeScreen extends StatefulWidget implements Screen<HomeScreenRoute> {
   @override

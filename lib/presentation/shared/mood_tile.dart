@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:star_book/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
 
 class MoodTile extends StatelessWidget {
   final String title;

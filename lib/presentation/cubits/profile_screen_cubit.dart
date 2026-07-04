@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:star_book/domain/repository/journal_repo.dart';
-import 'package:star_book/domain/repository/user_repo.dart';
+import 'package:mood_journal/domain/repository/journal_repo.dart';
+import 'package:mood_journal/domain/repository/user_repo.dart';
 
 class ProfileScreenCubit extends Cubit<Points> {
   JournalRepo journalRepo;

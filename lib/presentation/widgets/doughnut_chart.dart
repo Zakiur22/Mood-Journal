@@ -1,11 +1,11 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:star_book/domain/models/mood/mood.dart';
-import 'package:star_book/domain/models/mood/mood_frequency.dart';
-import 'package:star_book/presentation/theme/styling/theme_color_style.dart';
-import 'package:star_book/presentation/utils/extension.dart';
-import 'package:star_book/presentation/widgets/arrow_indicator.dart';
+import 'package:mood_journal/domain/models/mood/mood.dart';
+import 'package:mood_journal/domain/models/mood/mood_frequency.dart';
+import 'package:mood_journal/presentation/theme/styling/theme_color_style.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/widgets/arrow_indicator.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class MoodDoughnutChart extends StatefulWidget {

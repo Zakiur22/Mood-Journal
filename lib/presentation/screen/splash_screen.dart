@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:star_book/app_settings.dart';
-import 'package:star_book/config.dart';
-import 'package:star_book/presentation/injector/injector.dart';
-import 'package:star_book/presentation/routes/routes.dart';
-import 'package:star_book/presentation/theme/styling/theme_color_style.dart';
-import 'package:star_book/presentation/utils/extension.dart';
-import 'package:star_book/presentation/widgets/gradient_scaffold.dart';
+import 'package:mood_journal/app_settings.dart';
+import 'package:mood_journal/config.dart';
+import 'package:mood_journal/presentation/injector/injector.dart';
+import 'package:mood_journal/presentation/routes/routes.dart';
+import 'package:mood_journal/presentation/theme/styling/theme_color_style.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/widgets/gradient_scaffold.dart';
 
 class SplashScreen extends StatefulWidget implements Screen<SplashScreenRoute> {
   @override

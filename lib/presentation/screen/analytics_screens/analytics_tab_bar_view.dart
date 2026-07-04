@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:star_book/presentation/routes/routes.dart';
-import 'package:star_book/presentation/screen/analytics_screens/monthly_analytics.dart';
-import 'package:star_book/presentation/screen/analytics_screens/weekly_analytics.dart';
-import 'package:star_book/presentation/shared/app_bar.dart';
-import 'package:star_book/presentation/theme/styling/theme_color_style.dart';
-import 'package:star_book/presentation/utils/extension.dart';
-import 'package:star_book/presentation/widgets/gradient_scaffold.dart';
+import 'package:mood_journal/presentation/routes/routes.dart';
+import 'package:mood_journal/presentation/screen/analytics_screens/monthly_analytics.dart';
+import 'package:mood_journal/presentation/screen/analytics_screens/weekly_analytics.dart';
+import 'package:mood_journal/presentation/shared/app_bar.dart';
+import 'package:mood_journal/presentation/theme/styling/theme_color_style.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/widgets/gradient_scaffold.dart';
 
 class AnalyticsScreen extends StatelessWidget
     implements Screen<AnalyticsScreenRoute> {

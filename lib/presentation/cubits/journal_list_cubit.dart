@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:star_book/domain/repository/journal_repo.dart';
+import 'package:mood_journal/domain/repository/journal_repo.dart';
 
 import 'cubit_state/cubit_state.dart';
 import 'journal_state.dart';

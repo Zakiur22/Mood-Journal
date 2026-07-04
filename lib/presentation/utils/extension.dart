@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:star_book/presentation/theme/styling/doughnut_chart_style.dart';
-import 'package:star_book/presentation/theme/styling/filled_button_style.dart';
-import 'package:star_book/presentation/theme/styling/floating_action_button_style.dart';
-import 'package:star_book/presentation/theme/styling/gradient_scaffold_style.dart';
-import 'package:star_book/presentation/theme/styling/theme_color_style.dart';
+import 'package:mood_journal/presentation/theme/styling/doughnut_chart_style.dart';
+import 'package:mood_journal/presentation/theme/styling/filled_button_style.dart';
+import 'package:mood_journal/presentation/theme/styling/floating_action_button_style.dart';
+import 'package:mood_journal/presentation/theme/styling/gradient_scaffold_style.dart';
+import 'package:mood_journal/presentation/theme/styling/theme_color_style.dart';
 
 /// Parsing Bool
 extension BoolParsing on String {

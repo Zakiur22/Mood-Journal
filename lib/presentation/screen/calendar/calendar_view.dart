@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:star_book/presentation/screen/calendar/custom_calendar_card.dart';
-import 'package:star_book/presentation/screen/calendar/year_title.dart';
-import 'package:star_book/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/screen/calendar/custom_calendar_card.dart';
+import 'package:mood_journal/presentation/screen/calendar/year_title.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
 
 class CalendarView extends StatelessWidget {
   const CalendarView({

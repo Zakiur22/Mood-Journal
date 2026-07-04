@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:star_book/presentation/routes/routes.dart';
-import 'package:star_book/presentation/shared/bottom_nav_bar.dart';
-import 'package:star_book/presentation/widgets/gradient_scaffold.dart';
+import 'package:mood_journal/presentation/routes/routes.dart';
+import 'package:mood_journal/presentation/shared/bottom_nav_bar.dart';
+import 'package:mood_journal/presentation/widgets/gradient_scaffold.dart';
 
 class MainScreen extends StatelessWidget implements Screen<MainScreenRoute> {
   @override

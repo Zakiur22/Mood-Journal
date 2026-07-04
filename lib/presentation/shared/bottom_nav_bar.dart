@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:star_book/presentation/theme/styling/theme_color_style.dart';
-import 'package:star_book/presentation/utils/extension.dart';
+import 'package:mood_journal/presentation/theme/styling/theme_color_style.dart';
+import 'package:mood_journal/presentation/utils/extension.dart';
 
 class BottomNavBar extends StatelessWidget {
   final int currentIndex;

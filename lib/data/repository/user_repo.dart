@@ -1,6 +1,6 @@
-import 'package:star_book/data/data_source/local_data_source/user_api.dart';
-import 'package:star_book/domain/models/user/user.dart';
-import 'package:star_book/domain/repository/user_repo.dart';
+import 'package:mood_journal/data/data_source/local_data_source/user_api.dart';
+import 'package:mood_journal/domain/models/user/user.dart';
+import 'package:mood_journal/domain/repository/user_repo.dart';
 
 class UserRepoImpl implements UserRepo {
   final IUserApi lSUserApi;
