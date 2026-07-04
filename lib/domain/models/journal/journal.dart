@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:star_book/data/models/journal/journal.dart' as J;
+import 'package:star_book/data/models/journal/journal.dart' as j;
 import 'package:star_book/domain/models/mood/mood.dart';
 
 part 'journal.freezed.dart';
@@ -26,7 +26,7 @@ class Journal with _$Journal {
       );
 
   factory Journal.fromLSJournal(
-    J.Journal from,
+    j.Journal from,
   ) {
     return Journal(
       id: from.id,
@@ -40,8 +40,8 @@ class Journal with _$Journal {
 }
 
 extension XJournal on Journal {
-  J.Journal get toLSJournal {
-    var journal = J.Journal(
+  j.Journal get toLSJournal {
+    var journal = j.Journal(
         id: id,
         createdAt: createdAt,
         updatedAt: updatedAt,
@@ -75,7 +75,7 @@ class JournalBody with _$JournalBody {
         createdAt: journal.createdAt,
       );
 
-  factory JournalBody.fromLSJournal(J.Journal journal) => JournalBody(
+  factory JournalBody.fromLSJournal(j.Journal journal) => JournalBody(
       mood: Mood.fromLSMood(journal.mood),
       title: journal.title,
       memo: journal.memo,
@@ -83,8 +83,8 @@ class JournalBody with _$JournalBody {
 }
 
 extension XJournalBody on JournalBody {
-  J.JournalBody get toLSJournalBody {
-    var journalBody = J.JournalBody(
+  j.JournalBody get toLSJournalBody {
+    var journalBody = j.JournalBody(
       title: title,
       memo: memo,
       createdAt: createdAt,

@@ -12,7 +12,7 @@ part of 'day.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$Day {
@@ -66,18 +66,18 @@ class _$DayCopyWithImpl<$Res, $Val extends Day> implements $DayCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$$_DayCopyWith<$Res> implements $DayCopyWith<$Res> {
-  factory _$$_DayCopyWith(_$_Day value, $Res Function(_$_Day) then) =
-      __$$_DayCopyWithImpl<$Res>;
+abstract class _$$DayImplCopyWith<$Res> implements $DayCopyWith<$Res> {
+  factory _$$DayImplCopyWith(_$DayImpl value, $Res Function(_$DayImpl) then) =
+      __$$DayImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int year, int month, int day});
 }
 
 /// @nodoc
-class __$$_DayCopyWithImpl<$Res> extends _$DayCopyWithImpl<$Res, _$_Day>
-    implements _$$_DayCopyWith<$Res> {
-  __$$_DayCopyWithImpl(_$_Day _value, $Res Function(_$_Day) _then)
+class __$$DayImplCopyWithImpl<$Res> extends _$DayCopyWithImpl<$Res, _$DayImpl>
+    implements _$$DayImplCopyWith<$Res> {
+  __$$DayImplCopyWithImpl(_$DayImpl _value, $Res Function(_$DayImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -87,7 +87,7 @@ class __$$_DayCopyWithImpl<$Res> extends _$DayCopyWithImpl<$Res, _$_Day>
     Object? month = null,
     Object? day = null,
   }) {
-    return _then(_$_Day(
+    return _then(_$DayImpl(
       year: null == year
           ? _value.year
           : year // ignore: cast_nullable_to_non_nullable
@@ -106,8 +106,8 @@ class __$$_DayCopyWithImpl<$Res> extends _$DayCopyWithImpl<$Res, _$_Day>
 
 /// @nodoc
 
-class _$_Day extends _Day {
-  const _$_Day({required this.year, required this.month, required this.day})
+class _$DayImpl extends _Day {
+  const _$DayImpl({required this.year, required this.month, required this.day})
       : assert(year >= 0),
         assert(month >= 1 && month <= 12),
         super._();
@@ -125,10 +125,10 @@ class _$_Day extends _Day {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Day &&
+            other is _$DayImpl &&
             (identical(other.year, year) || other.year == year) &&
             (identical(other.month, month) || other.month == month) &&
             (identical(other.day, day) || other.day == day));
@@ -140,15 +140,15 @@ class _$_Day extends _Day {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DayCopyWith<_$_Day> get copyWith =>
-      __$$_DayCopyWithImpl<_$_Day>(this, _$identity);
+  _$$DayImplCopyWith<_$DayImpl> get copyWith =>
+      __$$DayImplCopyWithImpl<_$DayImpl>(this, _$identity);
 }
 
 abstract class _Day extends Day {
   const factory _Day(
       {required final int year,
       required final int month,
-      required final int day}) = _$_Day;
+      required final int day}) = _$DayImpl;
   const _Day._() : super._();
 
   @override
@@ -159,5 +159,6 @@ abstract class _Day extends Day {
   int get day;
   @override
   @JsonKey(ignore: true)
-  _$$_DayCopyWith<_$_Day> get copyWith => throw _privateConstructorUsedError;
+  _$$DayImplCopyWith<_$DayImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }

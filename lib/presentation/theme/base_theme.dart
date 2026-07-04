@@ -69,7 +69,7 @@ abstract class BaseTheme {
       primaryColor: themeColorStyle.primaryColor,
       fontFamily: fontFamily.primary,
       appBarTheme: AppBarTheme(
-        color: themeColorStyle.primaryColor,
+        backgroundColor: themeColorStyle.primaryColor,
       ),
       textTheme: TextTheme(
         //  displayLarge: ,

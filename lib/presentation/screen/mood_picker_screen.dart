@@ -120,10 +120,10 @@ class MoodPickerBottomSheet extends StatefulWidget {
   final Function(Mood) onTap;
   final Mood? selectedMood;
   const MoodPickerBottomSheet({
-    Key? key,
+    super.key,
     required this.onTap,
     this.selectedMood,
-  }) : super(key: key);
+  });
 
   @override
   State<MoodPickerBottomSheet> createState() => _MoodPickerBottomSheetState();
@@ -166,7 +166,7 @@ class _MoodPickerBottomSheetState extends State<MoodPickerBottomSheet> {
                       width: deviceWidth * 0.2,
                       height: 4,
                       decoration: BoxDecoration(
-                        color: Colors.black.withOpacity(0.3),
+                        color: Colors.black.withValues(alpha: 0.3),
                         borderRadius: BorderRadius.circular(50),
                       ),
                     ),

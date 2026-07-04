@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:star_book/presentation/theme/styling/gradient_scaffold_style.dart';
 import 'package:star_book/presentation/theme/styling/theme_color_style.dart';
 import 'package:star_book/presentation/utils/extension.dart';
@@ -12,13 +11,13 @@ class GradientScaffold extends StatelessWidget {
   final Widget? floatingActionButton;
 
   const GradientScaffold({
-    Key? key,
+    super.key,
     this.appBar,
     this.body,
     this.bottomNavigationBar,
     this.resizeToAvoidBottomInset,
     this.floatingActionButton,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +38,7 @@ class GradientScaffold extends StatelessWidget {
               spreadRadius: 100,
               blurRadius: 80,
               shadowOpacity: 0.17,
-              color: gradientScaffoldStyle.secondaryColor!.withOpacity(0.17),
+              color: gradientScaffoldStyle.secondaryColor!.withValues(alpha: 0.17),
             ),
           ),
           Positioned(
@@ -52,7 +51,7 @@ class GradientScaffold extends StatelessWidget {
               spreadRadius: 120,
               blurRadius: 80,
               shadowOpacity: 0.1,
-              color: gradientScaffoldStyle.secondaryColor!.withOpacity(0.1),
+              color: gradientScaffoldStyle.secondaryColor!.withValues(alpha: 0.1),
             ),
           ),
           Positioned(
@@ -64,7 +63,7 @@ class GradientScaffold extends StatelessWidget {
               spreadRadius: 120,
               blurRadius: 80,
               shadowOpacity: 0.17,
-              color: gradientScaffoldStyle.primaryColor!.withOpacity(0.17),
+              color: gradientScaffoldStyle.primaryColor!.withValues(alpha: 0.17),
             ),
           ),
           Positioned(
@@ -77,7 +76,7 @@ class GradientScaffold extends StatelessWidget {
               spreadRadius: 40,
               blurRadius: 100,
               shadowOpacity: 0.1,
-              color: gradientScaffoldStyle.primaryColor!.withOpacity(0.1),
+              color: gradientScaffoldStyle.primaryColor!.withValues(alpha: 0.1),
             ),
           ),
           Positioned(
@@ -90,7 +89,7 @@ class GradientScaffold extends StatelessWidget {
               spreadRadius: 30,
               blurRadius: 35,
               shadowOpacity: 0.08,
-              color: gradientScaffoldStyle.tertiaryColor!.withOpacity(0.08),
+              color: gradientScaffoldStyle.tertiaryColor!.withValues(alpha: 0.08),
             ),
           ),
           Scaffold(
@@ -118,7 +117,7 @@ class BlurShadow extends StatelessWidget {
   final Color color;
 
   const BlurShadow({
-    Key? key,
+    super.key,
     required this.shadowWidth,
     required this.shadowHeight,
     required this.borderRadius,
@@ -126,7 +125,7 @@ class BlurShadow extends StatelessWidget {
     required this.blurRadius,
     required this.shadowOpacity,
     required this.color,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

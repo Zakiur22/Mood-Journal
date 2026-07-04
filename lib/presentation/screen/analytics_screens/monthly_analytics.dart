@@ -14,7 +14,7 @@ import 'package:star_book/presentation/utils/padding_style.dart';
 import 'package:star_book/presentation/widgets/doughnut_chart.dart';
 
 class MonthlyAnalyticsTab extends StatelessWidget {
-  const MonthlyAnalyticsTab({Key? key}) : super(key: key);
+  const MonthlyAnalyticsTab({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -120,7 +120,7 @@ class _SelectableTabState extends State<SelectableTab> {
                 decoration: BoxDecoration(
                   color: (month == selectedMonths)
                       ? themeColorStyle.secondaryColor
-                      : themeColorStyle.secondaryColor.withOpacity(0.03),
+                      : themeColorStyle.secondaryColor.withValues(alpha: 0.03),
                   borderRadius: BorderRadius.circular(100),
                 ),
                 alignment: Alignment.center,

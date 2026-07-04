@@ -12,11 +12,11 @@ class CustomTile extends StatelessWidget {
   final VoidCallback onTap;
 
   const CustomTile({
-    Key? key,
+    super.key,
     required this.title,
     required this.subtitle,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +44,7 @@ class CustomTile extends StatelessWidget {
 }
 
 class BlocShipTile extends StatefulWidget {
-  const BlocShipTile({Key? key}) : super(key: key);
+  const BlocShipTile({super.key});
 
   @override
   State<BlocShipTile> createState() => _BlocShipTileState();
@@ -89,7 +89,6 @@ class _BlocShipTileState extends State<BlocShipTile> {
         ),
         const SizedBox(width: 6),
         RichText(
-          textScaleFactor: MediaQuery.of(context).textScaleFactor,
           text: TextSpan(
             text: 'Powered by ',
             style: textTheme.bodyMedium!.copyWith(fontWeight: FontWeight.w400),
@@ -104,7 +103,7 @@ class _BlocShipTileState extends State<BlocShipTile> {
                 recognizer: _onTapRecognizerBlocship,
               ),
             ],
-          ),
+          ), textScaler: MediaQuery.textScalerOf(context),
         ),
       ],
     );
@@ -112,7 +111,7 @@ class _BlocShipTileState extends State<BlocShipTile> {
 }
 
 class UxerShipTile extends StatefulWidget {
-  const UxerShipTile({Key? key}) : super(key: key);
+  const UxerShipTile({super.key});
 
   @override
   State<UxerShipTile> createState() => _UxerShipTileState();
@@ -140,7 +139,7 @@ class _UxerShipTileState extends State<UxerShipTile> {
     try {
       await launchUrlString(link, mode: LaunchMode.inAppWebView);
     } on Exception catch (e) {
-      print('Failed to launch link $link: $e');
+      log('Failed to launch link $link: $e');
     }
   }
 
@@ -157,7 +156,6 @@ class _UxerShipTileState extends State<UxerShipTile> {
         ),
         const SizedBox(width: 6),
         RichText(
-          textScaleFactor: MediaQuery.of(context).textScaleFactor,
           text: TextSpan(
             text: 'Design & Crafted with ',
             style: textTheme.bodyMedium!.copyWith(fontWeight: FontWeight.w400),
@@ -183,7 +181,7 @@ class _UxerShipTileState extends State<UxerShipTile> {
                 recognizer: _onTapRecognizerUxership,
               ),
             ],
-          ),
+          ), textScaler: MediaQuery.textScalerOf(context),
         ),
       ],
     );

@@ -34,7 +34,6 @@ class ProfileScreen extends StatelessWidget implements Screen<ProfileScreenRoute
         builder: (context, state) {
           final getPoints = context.read<ProfileScreenCubit>().getStreakAndPoint();
           final userId = Injector.resolve<AppSettings>().userId;
-          print('userId: $userId');
           final getUser = context.read<ProfileScreenCubit>().getUserName(userId);
           return Scaffold(
             backgroundColor: Colors.transparent,

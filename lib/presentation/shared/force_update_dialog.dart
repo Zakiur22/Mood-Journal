@@ -42,7 +42,7 @@ class ForceAppUpdateDialog extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: textTheme.bodyMedium!.copyWith(
                       fontWeight: FontWeight.w400,
-                      color: themeColorStyle.secondaryColor.withOpacity(0.5)),
+                      color: themeColorStyle.secondaryColor.withValues(alpha: 0.5)),
                 ),
                 const SizedBox(height: 30),
                 PrimaryFilledButton(

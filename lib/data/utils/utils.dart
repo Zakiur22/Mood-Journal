@@ -30,7 +30,7 @@ abstract class Util {
   ///
   /// inspiration from: https://stackoverflow.com/q/53301344
   /// and : https://pub.dev/packages/nanoid
-  static get uid {
+  static String get uid {
     const alphabet =
         'ModuleSymbhasOwnPr0123456789ABCDEFGHNRVfgctiUvzKqYTJkLxpZXIjQW';
     const len = alphabet.length;

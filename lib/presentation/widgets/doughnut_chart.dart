@@ -13,10 +13,10 @@ class MoodDoughnutChart extends StatefulWidget {
   final bool isDataEmpty;
 
   const MoodDoughnutChart({
-    Key? key,
+    super.key,
     required this.moodDataMap,
     this.isDataEmpty = false,
-  }) : super(key: key);
+  });
 
   @override
   State<MoodDoughnutChart> createState() => _MoodDoughnutChartState();

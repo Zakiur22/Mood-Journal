@@ -23,10 +23,10 @@ class ForceAppUpdate {
       );
       try {
         final PackageInfo packageInfo = await PackageInfo.fromPlatform();
-        final _currentVersion = Version.parse(packageInfo.version);
+        final currentVersion = Version.parse(packageInfo.version);
         await remoteConfig.fetchAndActivate();
-        final _enforcedVersion = Version.parse(remoteConfig.getString(version));
-        if (_enforcedVersion > _currentVersion) {
+        final enforcedVersion = Version.parse(remoteConfig.getString(version));
+        if (enforcedVersion > currentVersion) {
           if (context.mounted) {
             await _forceAppUpdateDialogBox(context);
           }
@@ -39,18 +39,17 @@ class ForceAppUpdate {
     }
   }
 
-  static Future<void> _forceAppUpdateDialogBox(context) async {
-    Future<bool> onBackButton() async {
-      SystemNavigator.pop();
-      return false;
-    }
-
+  static Future<void> _forceAppUpdateDialogBox(BuildContext context) async {
     await showDialog<String>(
       context: context,
       barrierDismissible: false,
       builder: (BuildContext context) {
-        return WillPopScope(
-          onWillPop: () => onBackButton(),
+        return PopScope(
+          canPop: false,
+          onPopInvokedWithResult: (bool didPop, Object? result) {
+            if (didPop) return;
+            SystemNavigator.pop();
+          },
           child: const ForceAppUpdateDialog(),
         );
       },

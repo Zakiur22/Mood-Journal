@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:star_book/data/models/user/user.dart' as U;
+import 'package:star_book/data/models/user/user.dart' as u;
 
 part 'user.freezed.dart';
 
@@ -11,7 +11,7 @@ class User with _$User {
     required final String name,
   }) = _User;
 
-  factory User.fromLSUser(U.User from) {
+  factory User.fromLSUser(u.User from) {
     return User(
       id: from.id,
       name: from.name,
@@ -20,8 +20,8 @@ class User with _$User {
 }
 
 extension XUser on User {
-  U.User get toLSUser {
-    return U.User(
+  u.User get toLSUser {
+    return u.User(
       id: id,
       name: name,
     );
@@ -35,7 +35,7 @@ class UserBody with _$UserBody {
     required final String name,
   }) = _UserBody;
 
-  factory UserBody.fromLSUserBody(U.UserBody from) {
+  factory UserBody.fromLSUserBody(u.UserBody from) {
     return UserBody(
       name: from.name,
     );
@@ -49,14 +49,14 @@ class UserBody with _$UserBody {
         name: user.name,
       );
 
-  factory UserBody.fromLSUser(U.User user) => UserBody(
+  factory UserBody.fromLSUser(u.User user) => UserBody(
         name: user.name,
       );
 }
 
 extension XUserBody on UserBody {
-  U.UserBody get toLSUserBody {
-    return U.UserBody(
+  u.UserBody get toLSUserBody {
+    return u.UserBody(
       name: name,
     );
   }

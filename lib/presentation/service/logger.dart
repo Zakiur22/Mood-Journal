@@ -11,11 +11,13 @@ class SbLog extends Logger {
 
 class _QtLogPrinter extends LogPrinter {
   static const Map<Level, String> _levelEmojis = {
+    // ignore: deprecated_member_use
     Level.verbose: '🌸  VERBOSE — ',
     Level.debug: '🐛  DEBUG   — ',
     Level.info: '💡  INFO    — ',
     Level.warning: '👊🏻  WARNING — ',
     Level.error: '⛔  ERROR   — ',
+    // ignore: deprecated_member_use
     Level.wtf: '👾  WTF     — ',
     Level.all: '🌈  ALL     — ',
     Level.fatal: '💀  FATAL   — ',

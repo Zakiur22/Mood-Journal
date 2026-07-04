@@ -10,12 +10,12 @@ class StatsWidget extends StatelessWidget {
   final int streak;
 
   const StatsWidget({
-    Key? key,
+    super.key,
     required this.pointsImagePath,
     required this.points,
     required this.streakImagePath,
     required this.streak,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class StatsWidget extends StatelessWidget {
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: themeColorStyle.secondaryColor.withOpacity(0.1),
+            color: themeColorStyle.secondaryColor.withValues(alpha: 0.1),
             blurRadius: 100,
           ),
         ],
@@ -60,11 +60,11 @@ class CustomCard extends StatelessWidget {
   final String title;
 
   const CustomCard({
-    Key? key,
+    super.key,
     required this.imagePath,
     required this.count,
     required this.title,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

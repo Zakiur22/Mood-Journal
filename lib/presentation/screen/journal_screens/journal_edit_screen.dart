@@ -24,9 +24,9 @@ class JournalEditScreen extends StatefulWidget
   final JournalEditScreenRoute arg;
 
   const JournalEditScreen({
-    Key? key,
+    super.key,
     required this.arg,
-  }) : super(key: key);
+  });
 
   @override
   State<JournalEditScreen> createState() => _JournalEditScreenState();
@@ -119,11 +119,11 @@ class MoodWidget extends StatelessWidget {
   final String mood;
 
   const MoodWidget({
-    Key? key,
+    super.key,
     required this.date,
     required this.moodColor,
     required this.mood,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

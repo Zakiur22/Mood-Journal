@@ -17,7 +17,7 @@ class FormValidator {
 
   /// [nameValidator] that requires the name field is non nullable
   /// and should be less than 15 characters (Only Contains Alphabetic character)
-  static String? nameValidator(value) {
+  static String? nameValidator(String? value) {
     final name = RegExp(r'^[a-zA-Z\s]+$');
     if (value == null || value.isEmpty) {
       return 'Please enter your name';

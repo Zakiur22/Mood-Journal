@@ -9,11 +9,11 @@ class PrimaryTextField extends StatelessWidget {
   final FormFieldValidator<String>? validator;
 
   const PrimaryTextField({
-    Key? key,
+    super.key,
     required this.hintText,
     required this.controller,
     this.validator,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +65,7 @@ class CustomTextFormField extends StatefulWidget {
   final FormFieldValidator<String>? validator;
 
   const CustomTextFormField({
-    Key? key,
+    super.key,
     required this.heading,
     this.label,
     this.initialValue,
@@ -74,8 +74,7 @@ class CustomTextFormField extends StatefulWidget {
     this.validator,
     this.onChanged,
   })  : assert(label != null || initialValue != null,
-            'Label and initialValue both cannot be null'),
-        super(key: key);
+            'Label and initialValue both cannot be null');
 
   @override
   State<CustomTextFormField> createState() => _CustomTextFormFieldState();
@@ -149,12 +148,12 @@ class SelectableTile extends StatelessWidget {
   final VoidCallback onTap;
 
   const SelectableTile({
-    Key? key,
+    super.key,
     required this.title,
     this.select,
     required this.onTap,
     this.color,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

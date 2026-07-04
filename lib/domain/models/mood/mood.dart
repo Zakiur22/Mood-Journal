@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:star_book/data/models/mood/mood.dart' as M;
+import 'package:star_book/data/models/mood/mood.dart' as m;
 
 part 'mood.freezed.dart';
 
@@ -18,7 +18,7 @@ class Mood with _$Mood {
         color: 0xFFFFFFFF,
       );
 
-  factory Mood.fromLSMood(M.Mood from) {
+  factory Mood.fromLSMood(m.Mood from) {
     return Mood(
       id: from.id,
       label: from.label,
@@ -28,8 +28,8 @@ class Mood with _$Mood {
 }
 
 extension XMood on Mood {
-  M.Mood get toLSMood {
-    return M.Mood(
+  m.Mood get toLSMood {
+    return m.Mood(
       id: id,
       label: label,
       color: color,
@@ -55,7 +55,7 @@ class MoodBody with _$MoodBody {
         color: mood.color,
       );
 
-  factory MoodBody.fromLSMoodBody(M.MoodBody from) {
+  factory MoodBody.fromLSMoodBody(m.MoodBody from) {
     return MoodBody(
       label: from.label,
       color: from.color,
@@ -64,8 +64,8 @@ class MoodBody with _$MoodBody {
 }
 
 extension XMoodBody on MoodBody {
-  M.MoodBody get toLSMoodBody {
-    return M.MoodBody(
+  m.MoodBody get toLSMoodBody {
+    return m.MoodBody(
       label: label,
       color: color,
     );

@@ -12,7 +12,7 @@ part of 'mood.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$Mood {
@@ -67,18 +67,20 @@ class _$MoodCopyWithImpl<$Res, $Val extends Mood>
 }
 
 /// @nodoc
-abstract class _$$_MoodCopyWith<$Res> implements $MoodCopyWith<$Res> {
-  factory _$$_MoodCopyWith(_$_Mood value, $Res Function(_$_Mood) then) =
-      __$$_MoodCopyWithImpl<$Res>;
+abstract class _$$MoodImplCopyWith<$Res> implements $MoodCopyWith<$Res> {
+  factory _$$MoodImplCopyWith(
+          _$MoodImpl value, $Res Function(_$MoodImpl) then) =
+      __$$MoodImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String id, String label, int color});
 }
 
 /// @nodoc
-class __$$_MoodCopyWithImpl<$Res> extends _$MoodCopyWithImpl<$Res, _$_Mood>
-    implements _$$_MoodCopyWith<$Res> {
-  __$$_MoodCopyWithImpl(_$_Mood _value, $Res Function(_$_Mood) _then)
+class __$$MoodImplCopyWithImpl<$Res>
+    extends _$MoodCopyWithImpl<$Res, _$MoodImpl>
+    implements _$$MoodImplCopyWith<$Res> {
+  __$$MoodImplCopyWithImpl(_$MoodImpl _value, $Res Function(_$MoodImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -88,7 +90,7 @@ class __$$_MoodCopyWithImpl<$Res> extends _$MoodCopyWithImpl<$Res, _$_Mood>
     Object? label = null,
     Object? color = null,
   }) {
-    return _then(_$_Mood(
+    return _then(_$MoodImpl(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -107,8 +109,8 @@ class __$$_MoodCopyWithImpl<$Res> extends _$MoodCopyWithImpl<$Res, _$_Mood>
 
 /// @nodoc
 
-class _$_Mood extends _Mood {
-  const _$_Mood({required this.id, required this.label, required this.color})
+class _$MoodImpl extends _Mood {
+  const _$MoodImpl({required this.id, required this.label, required this.color})
       : super._();
 
   @override
@@ -124,10 +126,10 @@ class _$_Mood extends _Mood {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Mood &&
+            other is _$MoodImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.label, label) || other.label == label) &&
             (identical(other.color, color) || other.color == color));
@@ -139,15 +141,15 @@ class _$_Mood extends _Mood {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_MoodCopyWith<_$_Mood> get copyWith =>
-      __$$_MoodCopyWithImpl<_$_Mood>(this, _$identity);
+  _$$MoodImplCopyWith<_$MoodImpl> get copyWith =>
+      __$$MoodImplCopyWithImpl<_$MoodImpl>(this, _$identity);
 }
 
 abstract class _Mood extends Mood {
   const factory _Mood(
       {required final String id,
       required final String label,
-      required final int color}) = _$_Mood;
+      required final int color}) = _$MoodImpl;
   const _Mood._() : super._();
 
   @override
@@ -158,7 +160,8 @@ abstract class _Mood extends Mood {
   int get color;
   @override
   @JsonKey(ignore: true)
-  _$$_MoodCopyWith<_$_Mood> get copyWith => throw _privateConstructorUsedError;
+  _$$MoodImplCopyWith<_$MoodImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -209,21 +212,22 @@ class _$MoodBodyCopyWithImpl<$Res, $Val extends MoodBody>
 }
 
 /// @nodoc
-abstract class _$$_MoodBodyCopyWith<$Res> implements $MoodBodyCopyWith<$Res> {
-  factory _$$_MoodBodyCopyWith(
-          _$_MoodBody value, $Res Function(_$_MoodBody) then) =
-      __$$_MoodBodyCopyWithImpl<$Res>;
+abstract class _$$MoodBodyImplCopyWith<$Res>
+    implements $MoodBodyCopyWith<$Res> {
+  factory _$$MoodBodyImplCopyWith(
+          _$MoodBodyImpl value, $Res Function(_$MoodBodyImpl) then) =
+      __$$MoodBodyImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String label, int color});
 }
 
 /// @nodoc
-class __$$_MoodBodyCopyWithImpl<$Res>
-    extends _$MoodBodyCopyWithImpl<$Res, _$_MoodBody>
-    implements _$$_MoodBodyCopyWith<$Res> {
-  __$$_MoodBodyCopyWithImpl(
-      _$_MoodBody _value, $Res Function(_$_MoodBody) _then)
+class __$$MoodBodyImplCopyWithImpl<$Res>
+    extends _$MoodBodyCopyWithImpl<$Res, _$MoodBodyImpl>
+    implements _$$MoodBodyImplCopyWith<$Res> {
+  __$$MoodBodyImplCopyWithImpl(
+      _$MoodBodyImpl _value, $Res Function(_$MoodBodyImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -232,7 +236,7 @@ class __$$_MoodBodyCopyWithImpl<$Res>
     Object? label = null,
     Object? color = null,
   }) {
-    return _then(_$_MoodBody(
+    return _then(_$MoodBodyImpl(
       label: null == label
           ? _value.label
           : label // ignore: cast_nullable_to_non_nullable
@@ -247,8 +251,8 @@ class __$$_MoodBodyCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MoodBody extends _MoodBody {
-  const _$_MoodBody({required this.label, required this.color}) : super._();
+class _$MoodBodyImpl extends _MoodBody {
+  const _$MoodBodyImpl({required this.label, required this.color}) : super._();
 
   @override
   final String label;
@@ -261,10 +265,10 @@ class _$_MoodBody extends _MoodBody {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_MoodBody &&
+            other is _$MoodBodyImpl &&
             (identical(other.label, label) || other.label == label) &&
             (identical(other.color, color) || other.color == color));
   }
@@ -275,13 +279,13 @@ class _$_MoodBody extends _MoodBody {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_MoodBodyCopyWith<_$_MoodBody> get copyWith =>
-      __$$_MoodBodyCopyWithImpl<_$_MoodBody>(this, _$identity);
+  _$$MoodBodyImplCopyWith<_$MoodBodyImpl> get copyWith =>
+      __$$MoodBodyImplCopyWithImpl<_$MoodBodyImpl>(this, _$identity);
 }
 
 abstract class _MoodBody extends MoodBody {
   const factory _MoodBody(
-      {required final String label, required final int color}) = _$_MoodBody;
+      {required final String label, required final int color}) = _$MoodBodyImpl;
   const _MoodBody._() : super._();
 
   @override
@@ -290,6 +294,6 @@ abstract class _MoodBody extends MoodBody {
   int get color;
   @override
   @JsonKey(ignore: true)
-  _$$_MoodBodyCopyWith<_$_MoodBody> get copyWith =>
+  _$$MoodBodyImplCopyWith<_$MoodBodyImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

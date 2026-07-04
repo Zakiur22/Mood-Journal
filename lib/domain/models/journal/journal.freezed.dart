@@ -12,7 +12,7 @@ part of 'journal.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$Journal {
@@ -101,10 +101,10 @@ class _$JournalCopyWithImpl<$Res, $Val extends Journal>
 }
 
 /// @nodoc
-abstract class _$$_JournalCopyWith<$Res> implements $JournalCopyWith<$Res> {
-  factory _$$_JournalCopyWith(
-          _$_Journal value, $Res Function(_$_Journal) then) =
-      __$$_JournalCopyWithImpl<$Res>;
+abstract class _$$JournalImplCopyWith<$Res> implements $JournalCopyWith<$Res> {
+  factory _$$JournalImplCopyWith(
+          _$JournalImpl value, $Res Function(_$JournalImpl) then) =
+      __$$JournalImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -120,10 +120,11 @@ abstract class _$$_JournalCopyWith<$Res> implements $JournalCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_JournalCopyWithImpl<$Res>
-    extends _$JournalCopyWithImpl<$Res, _$_Journal>
-    implements _$$_JournalCopyWith<$Res> {
-  __$$_JournalCopyWithImpl(_$_Journal _value, $Res Function(_$_Journal) _then)
+class __$$JournalImplCopyWithImpl<$Res>
+    extends _$JournalCopyWithImpl<$Res, _$JournalImpl>
+    implements _$$JournalImplCopyWith<$Res> {
+  __$$JournalImplCopyWithImpl(
+      _$JournalImpl _value, $Res Function(_$JournalImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -136,7 +137,7 @@ class __$$_JournalCopyWithImpl<$Res>
     Object? title = null,
     Object? memo = null,
   }) {
-    return _then(_$_Journal(
+    return _then(_$JournalImpl(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -167,8 +168,8 @@ class __$$_JournalCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Journal extends _Journal {
-  const _$_Journal(
+class _$JournalImpl extends _Journal {
+  const _$JournalImpl(
       {required this.id,
       required this.createdAt,
       required this.updatedAt,
@@ -196,10 +197,10 @@ class _$_Journal extends _Journal {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Journal &&
+            other is _$JournalImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.createdAt, createdAt) ||
                 other.createdAt == createdAt) &&
@@ -217,8 +218,8 @@ class _$_Journal extends _Journal {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_JournalCopyWith<_$_Journal> get copyWith =>
-      __$$_JournalCopyWithImpl<_$_Journal>(this, _$identity);
+  _$$JournalImplCopyWith<_$JournalImpl> get copyWith =>
+      __$$JournalImplCopyWithImpl<_$JournalImpl>(this, _$identity);
 }
 
 abstract class _Journal extends Journal {
@@ -228,7 +229,7 @@ abstract class _Journal extends Journal {
       required final DateTime updatedAt,
       required final Mood mood,
       required final String title,
-      required final String memo}) = _$_Journal;
+      required final String memo}) = _$JournalImpl;
   const _Journal._() : super._();
 
   @override
@@ -245,7 +246,7 @@ abstract class _Journal extends Journal {
   String get memo;
   @override
   @JsonKey(ignore: true)
-  _$$_JournalCopyWith<_$_Journal> get copyWith =>
+  _$$JournalImplCopyWith<_$JournalImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -320,11 +321,11 @@ class _$JournalBodyCopyWithImpl<$Res, $Val extends JournalBody>
 }
 
 /// @nodoc
-abstract class _$$_JournalBodyCopyWith<$Res>
+abstract class _$$JournalBodyImplCopyWith<$Res>
     implements $JournalBodyCopyWith<$Res> {
-  factory _$$_JournalBodyCopyWith(
-          _$_JournalBody value, $Res Function(_$_JournalBody) then) =
-      __$$_JournalBodyCopyWithImpl<$Res>;
+  factory _$$JournalBodyImplCopyWith(
+          _$JournalBodyImpl value, $Res Function(_$JournalBodyImpl) then) =
+      __$$JournalBodyImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Mood mood, String title, String memo, DateTime? createdAt});
@@ -334,11 +335,11 @@ abstract class _$$_JournalBodyCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_JournalBodyCopyWithImpl<$Res>
-    extends _$JournalBodyCopyWithImpl<$Res, _$_JournalBody>
-    implements _$$_JournalBodyCopyWith<$Res> {
-  __$$_JournalBodyCopyWithImpl(
-      _$_JournalBody _value, $Res Function(_$_JournalBody) _then)
+class __$$JournalBodyImplCopyWithImpl<$Res>
+    extends _$JournalBodyCopyWithImpl<$Res, _$JournalBodyImpl>
+    implements _$$JournalBodyImplCopyWith<$Res> {
+  __$$JournalBodyImplCopyWithImpl(
+      _$JournalBodyImpl _value, $Res Function(_$JournalBodyImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -349,7 +350,7 @@ class __$$_JournalBodyCopyWithImpl<$Res>
     Object? memo = null,
     Object? createdAt = freezed,
   }) {
-    return _then(_$_JournalBody(
+    return _then(_$JournalBodyImpl(
       mood: null == mood
           ? _value.mood
           : mood // ignore: cast_nullable_to_non_nullable
@@ -372,8 +373,8 @@ class __$$_JournalBodyCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_JournalBody extends _JournalBody {
-  const _$_JournalBody(
+class _$JournalBodyImpl extends _JournalBody {
+  const _$JournalBodyImpl(
       {required this.mood,
       required this.title,
       required this.memo,
@@ -395,10 +396,10 @@ class _$_JournalBody extends _JournalBody {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_JournalBody &&
+            other is _$JournalBodyImpl &&
             (identical(other.mood, mood) || other.mood == mood) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.memo, memo) || other.memo == memo) &&
@@ -412,8 +413,8 @@ class _$_JournalBody extends _JournalBody {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_JournalBodyCopyWith<_$_JournalBody> get copyWith =>
-      __$$_JournalBodyCopyWithImpl<_$_JournalBody>(this, _$identity);
+  _$$JournalBodyImplCopyWith<_$JournalBodyImpl> get copyWith =>
+      __$$JournalBodyImplCopyWithImpl<_$JournalBodyImpl>(this, _$identity);
 }
 
 abstract class _JournalBody extends JournalBody {
@@ -421,7 +422,7 @@ abstract class _JournalBody extends JournalBody {
       {required final Mood mood,
       required final String title,
       required final String memo,
-      final DateTime? createdAt}) = _$_JournalBody;
+      final DateTime? createdAt}) = _$JournalBodyImpl;
   const _JournalBody._() : super._();
 
   @override
@@ -434,6 +435,6 @@ abstract class _JournalBody extends JournalBody {
   DateTime? get createdAt;
   @override
   @JsonKey(ignore: true)
-  _$$_JournalBodyCopyWith<_$_JournalBody> get copyWith =>
+  _$$JournalBodyImplCopyWith<_$JournalBodyImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

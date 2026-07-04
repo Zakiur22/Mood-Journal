@@ -11,7 +11,7 @@ class JournalTile extends StatelessWidget {
 
   Color get moodColor => Color(journal.mood.color);
 
-  Color get cardColor => moodColor.withOpacity(0.05);
+  Color get cardColor => moodColor.withValues(alpha: 0.05);
 
   @override
   Widget build(BuildContext context) {

@@ -13,7 +13,7 @@ class BottomNavBar extends StatelessWidget {
   final Color? backgroundColor;
 
   const BottomNavBar({
-    Key? key,
+    super.key,
     required this.currentIndex,
     required this.items,
     required this.onTap,
@@ -22,14 +22,12 @@ class BottomNavBar extends StatelessWidget {
     this.selectedLabelStyle,
     this.unselectedLabelStyle,
     this.backgroundColor,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     final TextTheme textTheme = context.textTheme;
     final ThemeColorStyle themeColorStyle = context.themeColorStyle;
-    final double deviceHeight = context.deviceHeight;
-    final double deviceWidth = context.deviceWidth;
     return SafeArea(
       top: false,
       minimum: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
@@ -38,7 +36,7 @@ class BottomNavBar extends StatelessWidget {
         decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
-              color: themeColorStyle.secondaryColor.withOpacity(0.1),
+              color: themeColorStyle.secondaryColor.withValues(alpha: 0.1),
               blurRadius: 100,
             ),
           ],
@@ -54,14 +52,14 @@ class BottomNavBar extends StatelessWidget {
               backgroundColor: themeColorStyle.quinaryColor,
               selectedItemColor: themeColorStyle.quaternaryColor,
               unselectedItemColor:
-                  themeColorStyle.quaternaryColor.withOpacity(0.4),
+                  themeColorStyle.quaternaryColor.withValues(alpha: 0.4),
               selectedLabelStyle: textTheme.bodyMedium!.copyWith(
                 fontWeight: FontWeight.w500,
                 color: themeColorStyle.quaternaryColor,
               ),
               unselectedLabelStyle: textTheme.bodyMedium!.copyWith(
                   fontWeight: FontWeight.w400,
-                  color: themeColorStyle.quaternaryColor.withOpacity(0.4)),
+                  color: themeColorStyle.quaternaryColor.withValues(alpha: 0.4)),
               currentIndex: currentIndex,
               onTap: onTap,
               items: items,

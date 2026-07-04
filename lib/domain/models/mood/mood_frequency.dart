@@ -9,11 +9,11 @@ class MoodFrequency {
   MoodFrequency.fromJournal({required List<Journal> journals}) {
     info = {};
     for (final journal in journals) {
-      final mood = journal.mood;
-      if (info.containsKey(mood)) {
-        info[Mood.fromLSMood(mood)] = info[mood]! + 1;
+      final domainMood = Mood.fromLSMood(journal.mood);
+      if (info.containsKey(domainMood)) {
+        info[domainMood] = info[domainMood]! + 1;
       } else {
-        info[Mood.fromLSMood(mood)] = 1;
+        info[domainMood] = 1;
       }
     }
   }

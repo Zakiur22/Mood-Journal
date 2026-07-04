@@ -101,11 +101,11 @@ class MoodRepoImpl implements MoodRepo {
   @override
   Future<void> addDefaultMoods() async {
     final moods = [
-      MoodBody(label: 'Happy', color: const Color(0xff0179FF).value),
-      MoodBody(label: 'Sad', color: const Color(0xff565AC9).value),
-      MoodBody(label: 'Productive', color: const Color(0xff32C74F).value),
-      MoodBody(label: 'Sick', color: const Color(0xffFF9600).value),
-      MoodBody(label: 'Angry', color: const Color(0xffFF3932).value),
+      MoodBody(label: 'Happy', color: const Color(0xff0179FF).toARGB32()),
+      MoodBody(label: 'Sad', color: const Color(0xff565AC9).toARGB32()),
+      MoodBody(label: 'Productive', color: const Color(0xff32C74F).toARGB32()),
+      MoodBody(label: 'Sick', color: const Color(0xffFF9600).toARGB32()),
+      MoodBody(label: 'Angry', color: const Color(0xffFF3932).toARGB32()),
     ];
     for (var mood in moods) {
       await addMood(mood: mood);

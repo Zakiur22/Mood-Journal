@@ -8,7 +8,7 @@ import 'package:star_book/presentation/utils/padding_style.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class DoughnutChartWidget extends StatefulWidget {
-  const DoughnutChartWidget({Key? key}) : super(key: key);
+  const DoughnutChartWidget({super.key});
 
   @override
   State<DoughnutChartWidget> createState() => _DoughnutChartWidgetState();
@@ -86,7 +86,7 @@ class _DoughnutChartWidgetState extends State<DoughnutChartWidget> {
         color: doughnutChartStyle.octonaryColor,
         boxShadow: [
           BoxShadow(
-            color: themeColorStyle.secondaryColor.withOpacity(0.1),
+            color: themeColorStyle.secondaryColor.withValues(alpha: 0.1),
             blurRadius: 100,
           ),
         ],
@@ -108,7 +108,7 @@ class _DoughnutChartWidgetState extends State<DoughnutChartWidget> {
               textAlign: TextAlign.center,
               style: textTheme.labelLarge!.copyWith(
                 fontWeight: FontWeight.w400,
-                color: themeColorStyle.secondaryColor.withOpacity(0.5),
+                color: themeColorStyle.secondaryColor.withValues(alpha: 0.5),
               ),
             ),
           ),

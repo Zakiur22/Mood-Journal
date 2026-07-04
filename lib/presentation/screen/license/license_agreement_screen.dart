@@ -105,9 +105,9 @@ class LicenseScreen extends StatefulWidget {
   final List<LicenseEntry> licenses;
 
   const LicenseScreen({
-    Key? key,
+    super.key,
     required this.licenses,
-  }) : super(key: key);
+  });
 
   @override
   State<LicenseScreen> createState() => _LicenseScreenState();

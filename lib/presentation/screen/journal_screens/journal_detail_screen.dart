@@ -98,11 +98,11 @@ class MoodWidget extends StatelessWidget {
   final String mood;
 
   const MoodWidget({
-    Key? key,
+    super.key,
     required this.date,
     required this.moodColor,
     required this.mood,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -145,10 +145,10 @@ class DocumentWidget extends StatelessWidget {
   final String description;
 
   const DocumentWidget({
-    Key? key,
+    super.key,
     required this.title,
     required this.description,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

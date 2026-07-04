@@ -21,22 +21,22 @@ abstract class PlatformInfo {
 class _AndroidPlatformInfo implements PlatformInfo {
   @override
   final FirebaseOptions options = const FirebaseOptions(
-    apiKey: const String.fromEnvironment('apiKey'),
-    appId: const String.fromEnvironment('appIdAndroid'),
-    messagingSenderId: const String.fromEnvironment('messagingSenderId'),
-    projectId: const String.fromEnvironment('projectId'),
-    storageBucket: const String.fromEnvironment('storageBucket'),
+    apiKey: String.fromEnvironment('apiKey'),
+    appId: String.fromEnvironment('appIdAndroid'),
+    messagingSenderId: String.fromEnvironment('messagingSenderId'),
+    projectId: String.fromEnvironment('projectId'),
+    storageBucket: String.fromEnvironment('storageBucket'),
   );
 }
 
 class _IosPlatformInfo implements PlatformInfo {
   @override
   final FirebaseOptions options = const FirebaseOptions(
-    apiKey: const String.fromEnvironment('apiKey'),
-    appId: const String.fromEnvironment('appIdIos'),
-    messagingSenderId: const String.fromEnvironment('messagingSenderId'),
-    projectId: const String.fromEnvironment('projectId'),
-    storageBucket: const String.fromEnvironment('storageBucket'),
-    iosBundleId: const String.fromEnvironment('iosBundleId'),
+    apiKey: String.fromEnvironment('apiKey'),
+    appId: String.fromEnvironment('appIdIos'),
+    messagingSenderId: String.fromEnvironment('messagingSenderId'),
+    projectId: String.fromEnvironment('projectId'),
+    storageBucket: String.fromEnvironment('storageBucket'),
+    iosBundleId: String.fromEnvironment('iosBundleId'),
   );
 }

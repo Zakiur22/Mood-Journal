@@ -90,12 +90,12 @@ class DatePickerBottomSheet extends StatefulWidget {
   final Function(DateTime dateTime)? onDone;
 
   const DatePickerBottomSheet({
-    Key? key,
+    super.key,
     required this.initialDate,
     // @deprecated
     // required this.onDateChanged,
     required this.onDone,
-  }) : super(key: key);
+  });
 
   @override
   State<DatePickerBottomSheet> createState() => _DatePickerBottomSheetState();
@@ -139,7 +139,7 @@ class _DatePickerBottomSheetState extends State<DatePickerBottomSheet> {
                 width: deviceWidth * 0.2,
                 height: 4,
                 decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(0.3),
+                  color: Colors.black.withValues(alpha: 0.3),
                   borderRadius: BorderRadius.circular(50),
                 ),
               ),

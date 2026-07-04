@@ -85,7 +85,6 @@ class _PickerWidgetState extends State<PickerWidget> {
 
   @override
   Widget build(BuildContext context) {
-    final TextTheme textTheme = context.textTheme;
     return Row(
       children: [
         _PickerItem(

@@ -4,9 +4,9 @@ class ArrowIndicator extends StatelessWidget {
   final double direction;
 
   const ArrowIndicator({
-    Key? key,
+    super.key,
     required this.direction,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

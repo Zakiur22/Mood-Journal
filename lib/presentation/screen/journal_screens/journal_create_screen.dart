@@ -96,7 +96,11 @@ class _JournalCreateScreenState extends State<JournalCreateScreen> {
                   context
                       .read<JournalCreateCubit>()
                       .addJournal()
-                      .then((value) => context.shouldPop());
+                      .then((value) {
+                        if (context.mounted) {
+                          context.shouldPop();
+                        }
+                      });
                 }
               },
               child: const Icon(Icons.check),
@@ -109,7 +113,7 @@ class _JournalCreateScreenState extends State<JournalCreateScreen> {
 }
 
 class AddNewDetails extends StatelessWidget {
-  const AddNewDetails({Key? key}) : super(key: key);
+  const AddNewDetails({super.key});
 
   @override
   Widget build(BuildContext context) {

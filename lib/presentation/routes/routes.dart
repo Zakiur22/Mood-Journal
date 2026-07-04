@@ -179,7 +179,7 @@ class AppRouter {
 
   @visibleForTesting
   static void printPaths() {
-    final routes = appRoutes.routerDelegate.builder.configuration.routes;
+    final routes = appRoutes.configuration.routes;
     final routesLength = routes.length;
     for (int e = 0; e < routesLength; e++) {
       String decorator = _getDecorator(depth: 0, isLast: e == routesLength - 1);

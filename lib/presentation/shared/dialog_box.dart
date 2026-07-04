@@ -15,9 +15,9 @@ class CustomDialogBox extends StatelessWidget {
   final String journalId;
 
   const CustomDialogBox({
-    Key? key,
+    super.key,
     required this.journalId,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +54,7 @@ class CustomDialogBox extends StatelessWidget {
                     style: textTheme.bodyMedium!.copyWith(
                         fontWeight: FontWeight.w400,
                         color:
-                            themeColorStyle.secondaryColor.withOpacity(0.5))),
+                            themeColorStyle.secondaryColor.withValues(alpha: 0.5))),
                 const SizedBox(height: 30),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

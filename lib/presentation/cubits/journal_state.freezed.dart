@@ -12,7 +12,7 @@ part of 'journal_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$JournalState {
@@ -57,22 +57,22 @@ class _$JournalStateCopyWithImpl<$Res, $Val extends JournalState>
 }
 
 /// @nodoc
-abstract class _$$_JournalStateCopyWith<$Res>
+abstract class _$$JournalStateImplCopyWith<$Res>
     implements $JournalStateCopyWith<$Res> {
-  factory _$$_JournalStateCopyWith(
-          _$_JournalState value, $Res Function(_$_JournalState) then) =
-      __$$_JournalStateCopyWithImpl<$Res>;
+  factory _$$JournalStateImplCopyWith(
+          _$JournalStateImpl value, $Res Function(_$JournalStateImpl) then) =
+      __$$JournalStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<Journal> journals});
 }
 
 /// @nodoc
-class __$$_JournalStateCopyWithImpl<$Res>
-    extends _$JournalStateCopyWithImpl<$Res, _$_JournalState>
-    implements _$$_JournalStateCopyWith<$Res> {
-  __$$_JournalStateCopyWithImpl(
-      _$_JournalState _value, $Res Function(_$_JournalState) _then)
+class __$$JournalStateImplCopyWithImpl<$Res>
+    extends _$JournalStateCopyWithImpl<$Res, _$JournalStateImpl>
+    implements _$$JournalStateImplCopyWith<$Res> {
+  __$$JournalStateImplCopyWithImpl(
+      _$JournalStateImpl _value, $Res Function(_$JournalStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -80,7 +80,7 @@ class __$$_JournalStateCopyWithImpl<$Res>
   $Res call({
     Object? journals = null,
   }) {
-    return _then(_$_JournalState(
+    return _then(_$JournalStateImpl(
       journals: null == journals
           ? _value._journals
           : journals // ignore: cast_nullable_to_non_nullable
@@ -91,8 +91,8 @@ class __$$_JournalStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_JournalState implements _JournalState {
-  _$_JournalState({required final List<Journal> journals})
+class _$JournalStateImpl implements _JournalState {
+  _$JournalStateImpl({required final List<Journal> journals})
       : _journals = journals;
 
   final List<Journal> _journals;
@@ -109,10 +109,10 @@ class _$_JournalState implements _JournalState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_JournalState &&
+            other is _$JournalStateImpl &&
             const DeepCollectionEquality().equals(other._journals, _journals));
   }
 
@@ -123,18 +123,18 @@ class _$_JournalState implements _JournalState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_JournalStateCopyWith<_$_JournalState> get copyWith =>
-      __$$_JournalStateCopyWithImpl<_$_JournalState>(this, _$identity);
+  _$$JournalStateImplCopyWith<_$JournalStateImpl> get copyWith =>
+      __$$JournalStateImplCopyWithImpl<_$JournalStateImpl>(this, _$identity);
 }
 
 abstract class _JournalState implements JournalState {
   factory _JournalState({required final List<Journal> journals}) =
-      _$_JournalState;
+      _$JournalStateImpl;
 
   @override
   List<Journal> get journals;
   @override
   @JsonKey(ignore: true)
-  _$$_JournalStateCopyWith<_$_JournalState> get copyWith =>
+  _$$JournalStateImplCopyWith<_$JournalStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

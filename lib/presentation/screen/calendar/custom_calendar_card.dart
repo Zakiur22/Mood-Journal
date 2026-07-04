@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:star_book/presentation/routes/routes.dart';
-import 'package:star_book/presentation/screen/home_screen.dart';
 import 'package:star_book/presentation/theme/styling/theme_color_style.dart';
 import 'package:star_book/presentation/utils/calendar.dart';
 import 'package:star_book/presentation/utils/extension.dart';
@@ -10,10 +9,10 @@ class CustomCalendarCard extends StatelessWidget {
   final int monthIndex;
 
   const CustomCalendarCard({
-    Key? key,
+    super.key,
     required this.monthIndex,
     required this.year,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

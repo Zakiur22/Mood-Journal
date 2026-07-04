@@ -2,7 +2,7 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 /// Provides version objects to enforce conformance to the Semantic Versioning 2.0 spec. The spec can be read at http://semver.org/
-library version;
+library;
 
 /// Provides immutable storage and comparison of semantic version numbers.
 class Version implements Comparable<Version> {
@@ -49,7 +49,7 @@ class Version implements Comparable<Version> {
             "preRelease segments must only contain [0-9A-Za-z-]");
       }
     }
-    if (this.build.isNotEmpty && !_buildRegex.hasMatch(this.build)) {
+    if (build.isNotEmpty && !_buildRegex.hasMatch(build)) {
       throw FormatException("build must only contain [0-9A-Za-z-.]");
     }
 
@@ -59,7 +59,7 @@ class Version implements Comparable<Version> {
   }
 
   @override
-  int get hashCode => this.toString().hashCode;
+  int get hashCode => toString().hashCode;
 
   /// Pre-release information segments.
   List<String> get preRelease => List<String>.from(_preRelease);
@@ -72,7 +72,7 @@ class Version implements Comparable<Version> {
 
   /// Determines whether the left-hand [Version] represents an equal precedence to the right-hand [Version].
   @override
-  bool operator ==(dynamic o) => o is Version && _compare(this, o) == 0;
+  bool operator ==(Object o) => o is Version && _compare(this, o) == 0;
 
   /// Determines whether the left-hand [Version] represents a greater precedence than the right-hand [Version].
   bool operator >(dynamic o) => o is Version && _compare(this, o) > 0;
@@ -92,28 +92,28 @@ class Version implements Comparable<Version> {
   /// Creates a new [Version] with the [major] version number incremented.
   ///
   /// Also resets the [minor] and [patch] numbers to 0, and clears the [build] and [preRelease] information.
-  Version incrementMajor() => Version(this.major + 1, 0, 0);
+  Version incrementMajor() => Version(major + 1, 0, 0);
 
   /// Creates a new [Version] with the [minor] version number incremented.
   ///
   /// Also resets the [patch] number to 0, and clears the [build] and [preRelease] information.
-  Version incrementMinor() => Version(this.major, this.minor + 1, 0);
+  Version incrementMinor() => Version(major, minor + 1, 0);
 
   /// Creates a new [Version] with the [patch] version number incremented.
   ///
   /// Also clears the [build] and [preRelease] information.
-  Version incrementPatch() => Version(this.major, this.minor, this.patch + 1);
+  Version incrementPatch() => Version(major, minor, patch + 1);
 
   /// Creates a new [Version] with the right-most numeric [preRelease] segment incremented.
   /// If no numeric segment is found, one will be added with the value "1".
   ///
   /// If this [Version] is not a pre-release version, an Exception will be thrown.
   Version incrementPreRelease() {
-    if (!this.isPreRelease) {
+    if (!isPreRelease) {
       throw Exception(
           "Cannot increment pre-release on a non-pre-release [Version]");
     }
-    var newPreRelease = this.preRelease;
+    var newPreRelease = preRelease;
 
     var found = false;
     for (var i = newPreRelease.length - 1; i >= 0; i--) {
@@ -130,7 +130,7 @@ class Version implements Comparable<Version> {
       newPreRelease.add("1");
     }
 
-    return Version(this.major, this.minor, this.patch,
+    return Version(major, minor, patch,
         preRelease: newPreRelease);
   }
 

@@ -12,7 +12,7 @@ class SplashScreen extends StatefulWidget implements Screen<SplashScreenRoute> {
   @override
   final SplashScreenRoute arg;
 
-  const SplashScreen({Key? key, required this.arg}) : super(key: key);
+  const SplashScreen({super.key, required this.arg});
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();

@@ -19,9 +19,9 @@ class SettingsScreen extends StatelessWidget
   final SettingsScreenRoute arg;
 
   const SettingsScreen({
-    Key? key,
+    super.key,
     required this.arg,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

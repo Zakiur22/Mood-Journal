@@ -9,9 +9,10 @@ import 'package:star_book/presentation/widgets/gradient_scaffold.dart';
 
 class AnalyticsScreen extends StatelessWidget
     implements Screen<AnalyticsScreenRoute> {
+  @override
   final AnalyticsScreenRoute arg;
 
-  const AnalyticsScreen({Key? key, required this.arg}) : super(key: key);
+  const AnalyticsScreen({super.key, required this.arg});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class AnalyticsScreen extends StatelessWidget
 }
 
 class AnalyticsTabBarView extends StatefulWidget {
-  const AnalyticsTabBarView({Key? key}) : super(key: key);
+  const AnalyticsTabBarView({super.key});
 
   @override
   State<AnalyticsTabBarView> createState() => _AnalyticsTabBarViewState();
@@ -59,7 +60,7 @@ class _AnalyticsTabBarViewState extends State<AnalyticsTabBarView>
               height: deviceHeight * 0.055,
               padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
               decoration: BoxDecoration(
-                color: themeColorStyle.secondaryColor.withOpacity(0.03),
+                color: themeColorStyle.secondaryColor.withValues(alpha: 0.03),
                 borderRadius: BorderRadius.circular(15),
               ),
               child: TabBar(

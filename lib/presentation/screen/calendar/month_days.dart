@@ -20,9 +20,9 @@ class MonthScreen extends StatelessWidget {
   final MonthDetails monthDetails;
 
   const MonthScreen({
-    Key? key,
+    super.key,
     required this.monthDetails,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -116,7 +116,7 @@ class MonthScreen extends StatelessWidget {
 }
 
 class WeekDaysView extends StatelessWidget {
-  const WeekDaysView({Key? key}) : super(key: key);
+  const WeekDaysView({super.key});
 
   @override
   Widget build(BuildContext context) {

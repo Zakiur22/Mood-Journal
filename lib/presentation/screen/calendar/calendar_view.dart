@@ -34,9 +34,9 @@ class CalendarMonthView extends StatelessWidget {
   final int year;
 
   const CalendarMonthView({
-    Key? key,
+    super.key,
     required this.year,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

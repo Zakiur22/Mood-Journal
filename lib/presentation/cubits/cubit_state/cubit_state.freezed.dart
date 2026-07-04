@@ -12,7 +12,7 @@ part of 'cubit_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$CubitState<T> {
@@ -87,25 +87,25 @@ class _$CubitStateCopyWithImpl<T, $Res, $Val extends CubitState<T>>
 }
 
 /// @nodoc
-abstract class _$$InitialStateCopyWith<T, $Res> {
-  factory _$$InitialStateCopyWith(
-          _$InitialState<T> value, $Res Function(_$InitialState<T>) then) =
-      __$$InitialStateCopyWithImpl<T, $Res>;
+abstract class _$$InitialStateImplCopyWith<T, $Res> {
+  factory _$$InitialStateImplCopyWith(_$InitialStateImpl<T> value,
+          $Res Function(_$InitialStateImpl<T>) then) =
+      __$$InitialStateImplCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$$InitialStateCopyWithImpl<T, $Res>
-    extends _$CubitStateCopyWithImpl<T, $Res, _$InitialState<T>>
-    implements _$$InitialStateCopyWith<T, $Res> {
-  __$$InitialStateCopyWithImpl(
-      _$InitialState<T> _value, $Res Function(_$InitialState<T>) _then)
+class __$$InitialStateImplCopyWithImpl<T, $Res>
+    extends _$CubitStateCopyWithImpl<T, $Res, _$InitialStateImpl<T>>
+    implements _$$InitialStateImplCopyWith<T, $Res> {
+  __$$InitialStateImplCopyWithImpl(
+      _$InitialStateImpl<T> _value, $Res Function(_$InitialStateImpl<T>) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$InitialState<T> implements InitialState<T> {
-  const _$InitialState();
+class _$InitialStateImpl<T> implements InitialState<T> {
+  const _$InitialStateImpl();
 
   @override
   String toString() {
@@ -113,9 +113,9 @@ class _$InitialState<T> implements InitialState<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$InitialState<T>);
+        (other.runtimeType == runtimeType && other is _$InitialStateImpl<T>);
   }
 
   @override
@@ -197,29 +197,29 @@ class _$InitialState<T> implements InitialState<T> {
 }
 
 abstract class InitialState<T> implements CubitState<T> {
-  const factory InitialState() = _$InitialState<T>;
+  const factory InitialState() = _$InitialStateImpl<T>;
 }
 
 /// @nodoc
-abstract class _$$LoadingStateCopyWith<T, $Res> {
-  factory _$$LoadingStateCopyWith(
-          _$LoadingState<T> value, $Res Function(_$LoadingState<T>) then) =
-      __$$LoadingStateCopyWithImpl<T, $Res>;
+abstract class _$$LoadingStateImplCopyWith<T, $Res> {
+  factory _$$LoadingStateImplCopyWith(_$LoadingStateImpl<T> value,
+          $Res Function(_$LoadingStateImpl<T>) then) =
+      __$$LoadingStateImplCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$$LoadingStateCopyWithImpl<T, $Res>
-    extends _$CubitStateCopyWithImpl<T, $Res, _$LoadingState<T>>
-    implements _$$LoadingStateCopyWith<T, $Res> {
-  __$$LoadingStateCopyWithImpl(
-      _$LoadingState<T> _value, $Res Function(_$LoadingState<T>) _then)
+class __$$LoadingStateImplCopyWithImpl<T, $Res>
+    extends _$CubitStateCopyWithImpl<T, $Res, _$LoadingStateImpl<T>>
+    implements _$$LoadingStateImplCopyWith<T, $Res> {
+  __$$LoadingStateImplCopyWithImpl(
+      _$LoadingStateImpl<T> _value, $Res Function(_$LoadingStateImpl<T>) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$LoadingState<T> implements LoadingState<T> {
-  const _$LoadingState();
+class _$LoadingStateImpl<T> implements LoadingState<T> {
+  const _$LoadingStateImpl();
 
   @override
   String toString() {
@@ -227,9 +227,9 @@ class _$LoadingState<T> implements LoadingState<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoadingState<T>);
+        (other.runtimeType == runtimeType && other is _$LoadingStateImpl<T>);
   }
 
   @override
@@ -311,24 +311,24 @@ class _$LoadingState<T> implements LoadingState<T> {
 }
 
 abstract class LoadingState<T> implements CubitState<T> {
-  const factory LoadingState() = _$LoadingState<T>;
+  const factory LoadingState() = _$LoadingStateImpl<T>;
 }
 
 /// @nodoc
-abstract class _$$LoadedStateCopyWith<T, $Res> {
-  factory _$$LoadedStateCopyWith(
-          _$LoadedState<T> value, $Res Function(_$LoadedState<T>) then) =
-      __$$LoadedStateCopyWithImpl<T, $Res>;
+abstract class _$$LoadedStateImplCopyWith<T, $Res> {
+  factory _$$LoadedStateImplCopyWith(_$LoadedStateImpl<T> value,
+          $Res Function(_$LoadedStateImpl<T>) then) =
+      __$$LoadedStateImplCopyWithImpl<T, $Res>;
   @useResult
   $Res call({T value});
 }
 
 /// @nodoc
-class __$$LoadedStateCopyWithImpl<T, $Res>
-    extends _$CubitStateCopyWithImpl<T, $Res, _$LoadedState<T>>
-    implements _$$LoadedStateCopyWith<T, $Res> {
-  __$$LoadedStateCopyWithImpl(
-      _$LoadedState<T> _value, $Res Function(_$LoadedState<T>) _then)
+class __$$LoadedStateImplCopyWithImpl<T, $Res>
+    extends _$CubitStateCopyWithImpl<T, $Res, _$LoadedStateImpl<T>>
+    implements _$$LoadedStateImplCopyWith<T, $Res> {
+  __$$LoadedStateImplCopyWithImpl(
+      _$LoadedStateImpl<T> _value, $Res Function(_$LoadedStateImpl<T>) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -336,7 +336,7 @@ class __$$LoadedStateCopyWithImpl<T, $Res>
   $Res call({
     Object? value = freezed,
   }) {
-    return _then(_$LoadedState<T>(
+    return _then(_$LoadedStateImpl<T>(
       freezed == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -347,8 +347,8 @@ class __$$LoadedStateCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$LoadedState<T> implements LoadedState<T> {
-  const _$LoadedState(this.value);
+class _$LoadedStateImpl<T> implements LoadedState<T> {
+  const _$LoadedStateImpl(this.value);
 
   @override
   final T value;
@@ -359,10 +359,10 @@ class _$LoadedState<T> implements LoadedState<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$LoadedState<T> &&
+            other is _$LoadedStateImpl<T> &&
             const DeepCollectionEquality().equals(other.value, value));
   }
 
@@ -373,8 +373,9 @@ class _$LoadedState<T> implements LoadedState<T> {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$LoadedStateCopyWith<T, _$LoadedState<T>> get copyWith =>
-      __$$LoadedStateCopyWithImpl<T, _$LoadedState<T>>(this, _$identity);
+  _$$LoadedStateImplCopyWith<T, _$LoadedStateImpl<T>> get copyWith =>
+      __$$LoadedStateImplCopyWithImpl<T, _$LoadedStateImpl<T>>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -452,29 +453,29 @@ class _$LoadedState<T> implements LoadedState<T> {
 }
 
 abstract class LoadedState<T> implements CubitState<T> {
-  const factory LoadedState(final T value) = _$LoadedState<T>;
+  const factory LoadedState(final T value) = _$LoadedStateImpl<T>;
 
   T get value;
   @JsonKey(ignore: true)
-  _$$LoadedStateCopyWith<T, _$LoadedState<T>> get copyWith =>
+  _$$LoadedStateImplCopyWith<T, _$LoadedStateImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ErrorStateCopyWith<T, $Res> {
-  factory _$$ErrorStateCopyWith(
-          _$ErrorState<T> value, $Res Function(_$ErrorState<T>) then) =
-      __$$ErrorStateCopyWithImpl<T, $Res>;
+abstract class _$$ErrorStateImplCopyWith<T, $Res> {
+  factory _$$ErrorStateImplCopyWith(
+          _$ErrorStateImpl<T> value, $Res Function(_$ErrorStateImpl<T>) then) =
+      __$$ErrorStateImplCopyWithImpl<T, $Res>;
   @useResult
   $Res call({Exception exception});
 }
 
 /// @nodoc
-class __$$ErrorStateCopyWithImpl<T, $Res>
-    extends _$CubitStateCopyWithImpl<T, $Res, _$ErrorState<T>>
-    implements _$$ErrorStateCopyWith<T, $Res> {
-  __$$ErrorStateCopyWithImpl(
-      _$ErrorState<T> _value, $Res Function(_$ErrorState<T>) _then)
+class __$$ErrorStateImplCopyWithImpl<T, $Res>
+    extends _$CubitStateCopyWithImpl<T, $Res, _$ErrorStateImpl<T>>
+    implements _$$ErrorStateImplCopyWith<T, $Res> {
+  __$$ErrorStateImplCopyWithImpl(
+      _$ErrorStateImpl<T> _value, $Res Function(_$ErrorStateImpl<T>) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -482,7 +483,7 @@ class __$$ErrorStateCopyWithImpl<T, $Res>
   $Res call({
     Object? exception = null,
   }) {
-    return _then(_$ErrorState<T>(
+    return _then(_$ErrorStateImpl<T>(
       null == exception
           ? _value.exception
           : exception // ignore: cast_nullable_to_non_nullable
@@ -493,8 +494,8 @@ class __$$ErrorStateCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$ErrorState<T> implements ErrorState<T> {
-  const _$ErrorState(this.exception);
+class _$ErrorStateImpl<T> implements ErrorState<T> {
+  const _$ErrorStateImpl(this.exception);
 
   @override
   final Exception exception;
@@ -505,10 +506,10 @@ class _$ErrorState<T> implements ErrorState<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ErrorState<T> &&
+            other is _$ErrorStateImpl<T> &&
             (identical(other.exception, exception) ||
                 other.exception == exception));
   }
@@ -519,8 +520,8 @@ class _$ErrorState<T> implements ErrorState<T> {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ErrorStateCopyWith<T, _$ErrorState<T>> get copyWith =>
-      __$$ErrorStateCopyWithImpl<T, _$ErrorState<T>>(this, _$identity);
+  _$$ErrorStateImplCopyWith<T, _$ErrorStateImpl<T>> get copyWith =>
+      __$$ErrorStateImplCopyWithImpl<T, _$ErrorStateImpl<T>>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -598,10 +599,10 @@ class _$ErrorState<T> implements ErrorState<T> {
 }
 
 abstract class ErrorState<T> implements CubitState<T> {
-  const factory ErrorState(final Exception exception) = _$ErrorState<T>;
+  const factory ErrorState(final Exception exception) = _$ErrorStateImpl<T>;
 
   Exception get exception;
   @JsonKey(ignore: true)
-  _$$ErrorStateCopyWith<T, _$ErrorState<T>> get copyWith =>
+  _$$ErrorStateImplCopyWith<T, _$ErrorStateImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -5,7 +5,7 @@ import 'package:star_book/presentation/utils/extension.dart';
 import 'package:star_book/presentation/utils/padding_style.dart';
 
 class LegendsChart extends StatelessWidget {
-  const LegendsChart({Key? key}) : super(key: key);
+  const LegendsChart({super.key});
 
   @override
   Widget build(BuildContext context) {
