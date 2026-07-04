@@ -22,6 +22,40 @@ subprojects {
     project.evaluationDependsOn(':app')
 }
 
+subprojects {
+    def configureProject = { prj ->
+        if (prj.hasProperty('android')) {
+            prj.android {
+                if (namespace == null) {
+                    namespace = prj.group.toString()
+                }
+            }
+        }
+    }
+    if (project.state.executed) {
+        configureProject(project)
+    } else {
+        project.afterEvaluate {
+            configureProject(project)
+        }
+    }
+}
+
+subprojects {
+    if (project.name != "app") {
+        afterEvaluate { prj ->
+            if (prj.hasProperty('android')) {
+                prj.android {
+                    compileSdkVersion 34
+                    defaultConfig {
+                        targetSdkVersion 34
+                    }
+                }
+            }
+        }
+    }
+}
+
 tasks.register("clean", Delete) {
     delete rootProject.layout.buildDirectory
 }
