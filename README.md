@@ -7,6 +7,16 @@ A digital diary, mood tracker, and mental health companion designed to help you 
 **MoodJournal** is a beautifully designed, immersive journaling app. By tracking daily ratings and stories, the app utilizes positive psychology and Cognitive Behavioral Therapy (CBT) principles to foster patient, peaceful thinking and boost emotional well-being.
 
 
+<p align="center">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=80" alt="MoodJournal Banner" width="100%" style="border-radius: 8px;" />
+</p>
+
+
+<p align="center">
+  <img src="assets/images/intro_image.png" alt="MoodJournal Welcome Intro Screen" width="320" style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.15);" />
+</p>
+
+
 ---
 
 
