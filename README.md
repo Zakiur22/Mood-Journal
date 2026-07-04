@@ -1,4 +1,4 @@
-# ⭐️ MoodJournal
+# ⭐️ MoodJournal: Daily Diary & Mood Tracker
 
 
 A digital diary, mood tracker, and mental health companion designed to help you align your mind, record your stories, and understand your emotional trends.
