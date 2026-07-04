@@ -1,4 +1,4 @@
-# Project Plan - star_book
+# Project Plan - MoodJournal
 
 ## 1. Current State Assessment
 * **Category:** Lifestyle Mood Tracker

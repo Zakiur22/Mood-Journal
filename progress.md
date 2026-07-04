@@ -1,4 +1,4 @@
-# Project Progress - star_book
+# Project Progress - MoodJournal
 
 ## Phase 2: Initialization
 - [x] Create project-level `plan.md`
